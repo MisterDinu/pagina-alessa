@@ -57,6 +57,10 @@ nav > a:hover{
     color:#5f6470;
 }
 
+main{
+    padding-top: 60px;
+}
+
 header .textos-header{
     display: flex;
     height: 430px;
@@ -454,6 +458,7 @@ footer{
     }
 
     .contenedor-servicios {
+        width: 100%;
         flex-direction: column; /* Mostrar los elementos en una columna */
         align-items: center; /* Alinear al centro */
     }
@@ -471,9 +476,12 @@ footer{
         position: relative;
         top: -2px;
     }
+    .costos {
+        padding-left: 50px;
+    }
 
     .contenido-costos {
-        width: 100%; /* Ajustar el ancho al 80% cuando el ancho es igual o menor a 768px */
+        width: 90%; /* Ajustar el ancho al 80% cuando el ancho es igual o menor a 768px */
         height: 220px;
         align-items: center;
         flex-direction: column;
@@ -483,14 +491,13 @@ footer{
         justify-content: center;
         }
 
-
     .galeria-port {
-        flex-direction: column; /* Mostrar los elementos en una columna */
+        flex-direction: row; /* Mostrar los elementos en una columna */
         align-items: center; /* Alinear al centro */
     }
 
     .imagen-port {
-        width: 100%; /* Ajustar el ancho de las imágenes */
+        width: 60%; /* Ajustar el ancho de las imágenes */
         max-width: 300px; /* Establecer un ancho máximo para las imágenes */
     }
 
@@ -547,6 +554,7 @@ footer{
 /* Cuarta responsive */
 
 @media screen and (max-width: 530px) {
+
     .contenido-costos h3 {
         font-size: 15px;
     }
@@ -554,4 +562,100 @@ footer{
     .contenido-costos h4 {
         font-size: 12px;
     }
-}
+
+    .imagen-servicios {
+      width: 100%;
+    }
+  
+    .contenedor-costos .contenido-costos {
+      width: 90%;
+      padding-right: 0;
+    }
+  
+    .galeria-port .psicologo {
+      width: 100%;
+      margin: 5px;
+    }
+  
+    .imagen-port {
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    .cards .card,
+    .cards2 .card {
+      width: 90%;
+    }
+  }
+  These new @media blocks target screen sizes up to 768px and 530px, respectively. They contain specific modifications for each breakpoint. The changes include adjusting image and container sizes, reducing padding, and ensuring the content stacks more effectively on smaller screens.
+  
+  Please replace your existing CSS with this code, and it should provide a better responsive experience. Remember to clear your browser cache before checking the website again to ensure the new styles are applied correctly. If you encounter any issues or have further questions, feel free to ask!
+  
+  
+  
+  
+  
+  
+
+/* Quinta responsive */
+
+/* 
+@media screen and (max-width: 455px) {
+    
+    
+    .contenido-texto-card {
+        font-size: 12px;
+    }
+    
+    .imagen-servicios {
+        max-width: 100%;
+    }
+
+    .contenido-costos img {
+        max-width: 100%;
+    }
+
+    .imagen-port img {
+        width: 100%;
+    }
+
+    .contenedor-servicios {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-costos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contenido-costos {
+        width: 60%;
+    }
+
+    .galeria-port {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .imagen-port {
+        width: 48%;
+        max-width: 200px;
+    }
+
+    .cards,
+    .cards2 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .cards .card,
+    .cards2 .card {
+        width: 48%;
+    }
+}*/
