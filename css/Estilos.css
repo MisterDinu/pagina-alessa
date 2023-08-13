@@ -486,7 +486,6 @@ footer{
         align-items: center;
         flex-direction: column;
         text-align: center;
-        padding: 20px;
         flex-flow: row;
         justify-content: center;
         }
@@ -522,6 +521,7 @@ footer{
         margin-bottom: 30px; /* Añadir margen inferior para separar las tarjetas */
     }
 
+
     .footer {
         padding-bottom: 20px; /* Reducir el espacio inferior del footer */
     }
@@ -555,12 +555,16 @@ footer{
 
 @media screen and (max-width: 530px) {
 
+    .contenido-costos{
+        width: 90%;
+    }
+
     .contenido-costos h3 {
         font-size: 15px;
     }
 
     .contenido-costos h4 {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .imagen-servicios {
@@ -570,6 +574,12 @@ footer{
     .contenedor-costos .contenido-costos {
       width: 90%;
       padding-right: 0;
+    }
+    
+    .contenido-costos img{
+        width: 76%;
+        object-fit: contain;
+        display: block;
     }
   
     .galeria-port .psicologo {
@@ -582,15 +592,30 @@ footer{
       max-width: 200px;
     }
   
-    .cards .card,
-    .cards2 .card {
-      width: 90%;
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border:none;
+
+    }
+
+    .content-foo p{
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 16px;
     }
   }
-  These new @media blocks target screen sizes up to 768px and 530px, respectively. They contain specific modifications for each breakpoint. The changes include adjusting image and container sizes, reducing padding, and ensuring the content stacks more effectively on smaller screens.
-  
-  Please replace your existing CSS with this code, and it should provide a better responsive experience. Remember to clear your browser cache before checking the website again to ensure the new styles are applied correctly. If you encounter any issues or have further questions, feel free to ask!
-  
   
   
   
@@ -599,12 +624,12 @@ footer{
 
 /* Quinta responsive */
 
-/* 
+
 @media screen and (max-width: 455px) {
     
     
     .contenido-texto-card {
-        font-size: 12px;
+        font-size: 13px;
     }
     
     .imagen-servicios {
@@ -630,10 +655,24 @@ footer{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+
     }
 
     .contenido-costos {
         width: 60%;
+        flex-direction: column;
+    }
+
+    .contenedor-costos .contenido-costos {
+        width: 90%;
+        padding-right: 0;
+    }
+      
+    .contenido-costos img{
+        width: 80%;
+        object-fit: contain;
+        display: block;
+        padding-bottom: 15px;
     }
 
     .galeria-port {
@@ -647,15 +686,20 @@ footer{
         max-width: 200px;
     }
 
-    .cards,
-    .cards2 {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+    .card .contenido-texto-card{
+        padding-left: 10px;
     }
 
-    .cards .card,
-    .cards2 .card {
-        width: 48%;
+    .cards .card img{
+        display: flex;
+        width: 25%;
+        height: 34%;
     }
-}*/
+
+    .cards2 .card img{
+        display: flex;
+        width: 25%;
+        height: 34%;
+    }
+
+}
