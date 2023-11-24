@@ -8,15 +8,40 @@
     <link rel="shortcut icon" href="img/logo 18x18c.png" type="image/x-icon">
     <link rel="stylesheet" href="css/Estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <!-- <div class="hero-head">
+        <nav class="tabs is-boxed navbar is-right">
+            <div class="container">
+              <ul>
+                <li class="is-active">
+                    <a class="" href="index.html"> <p class="">Regresar al Inicio</p></a>
+                </li>
+                <li>
+                    <a href="nuestro-servicio.html">Nuestro Servicio</a>
+                </li>
+                <li>
+                    <a class="" href="xd.html">Costos</a>
+                </li>
+                <li>
+                    <a class="" href="#">Contacto</a>
+                </li>
+                <li>
+                    <a class="" href="#">Preguntas Frecuentes</a>  
+                </li>
+                </ul> 
+            </div>
+        </div> -->
+
+        
         <nav>
             <a href="index.html">Inicio</a>
             <a href="nuestro-servicio.html">Nuestro Servicio</a>
-            <a href="#">Costos</a>
+            <a href="xd.html">Costos</a>
             <a href="#">Contacto</a>
             <a href="#">Preguntas Frecuentes</a>
         </nav>
@@ -28,75 +53,101 @@
         </section>
     </header>
     <main>
-        <section class="contenedor servicios">
+        <section class="contenedor servicios section">
             <h2 class="titulo">Servicios</h2>
             <br>
             <br>
-                <div class="contenedor-servicios">
-                    <img src="img/Propaganda Alessa 2.png" alt="" class="imagen-servicios">
-                    <div  class="contenido-textos">
-                        <h3><span>1</span>Terapia Individual</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed amet officiis modi impedit culpa! Consequatur obcaecati maiores quas incidunt! Dolore non, mollitia veniam earum quibusdam explicabo nesciunt libero vitae.</p>
-                        <h3><span>2</span>Terapia de Pareja</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed amet officiis modi impedit culpa! Consequatur obcaecati maiores quas incidunt! Dolore non, mollitia veniam earum quibusdam explicabo nesciunt libero vitae.</p>
-                        <h3><span>3</span>Terapia Infantil</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed amet officiis modi impedit culpa! Consequatur obcaecati maiores quas incidunt! Dolore non, mollitia veniam earum quibusdam explicabo nesciunt libero vitae.</p>
-                    </div>
+            <div class="contenedor-servicios">
+                <img src="img/Propaganda Alessa 2.png" alt="" class="imagen-servicios">
+                <div  class="contenido-textos">
+                    <h3><span>1</span>Terapia Individual</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed amet officiis modi impedit culpa! Consequatur obcaecati maiores quas incidunt! Dolore non, mollitia veniam earum quibusdam explicabo nesciunt libero vitae.</p>
+                    <h3><span>2</span>Terapia de Pareja</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed amet officiis modi impedit culpa! Consequatur obcaecati maiores quas incidunt! Dolore non, mollitia veniam earum quibusdam explicabo nesciunt libero vitae.</p>
+                    <h3><span>3</span>Terapia Infantil</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sed amet officiis modi impedit culpa! Consequatur obcaecati maiores quas incidunt! Dolore non, mollitia veniam earum quibusdam explicabo nesciunt libero vitae.</p>
                 </div>
+            </div>
+            <div class="container">
+            <a href="nuestro-servicio.html">
+            <div class="button has-background-info is-rounded has-text-white content is-medium">Acerca del servicio</div>
+            </a>
+            </div>
         </section>
-        <section>
+        <section class="section is-medium">
+            <!-- Arreglar esta madre, dos columnas, imagen consultorio y costos + boton agenda sesión -->
+
             <h2 class="titulo">Costos</h2>
+            <br>
             <div class="contenedor-costos">
-                <div class="costos">
-                        <div class="contenido-costos"> 
-                            <img src="/img/Consultorio Alessa-10.jpg" alt="">
-                            <div class="textos-costos">
-                                <h3>Invierte en lo más importante, ¡tú!</h3>
-                                <br>
-                                <h4>Sesión $600 mxn</h4>
-                            </div>
+                <div class="box">
+                    <div class="columns">
+                        <div class="column is-full">
+                        <p class="title is-4 has-text-centered">Invierte en lo más importante, ¡tú!</p>
                         </div>
+                    </div>
+                    <div class="column is-full">
+                        <p class="subtitle is-size-5 has-text-centered">Costo de la sesión: $600 mxn.</p>
+                    </div>
+                    <div class="contenido-costos"> 
+                        <img src="/img/Consultorio Alessa-10.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="buttons has-addons is-centered">
+                        <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión" target="_blank">
+                            <button class="button has-background-info is-rounded">
+                                <p class="subtitle has-text-white">¡Agenda tu sesión aquí!</p>
+                            </button>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </section>
-        <section class="equipo">
+        <section class="equipo section">
             <div class="contenedor">
                 <h2 class="titulo">Psicólogos</h2>
                 <div class="galeria-port">
                     <div class="psicologo">
                         <div class="imagen-port">
                             <img src="img/Consultorio Alessa-23.jpg" alt="">
+                            <a href="#">
                             <div class="hover-galeria">
                                 <img src="/img/conoceme white.png" alt="">
                                 <p>Conóceme</p>
                             </div>
+                            </a>
                         </div>
                         <h3 class="nombre">César Tapia</h3>
                     </div>
                     <div class="psicologo">
                         <div class="imagen-port">
                             <img src="img/Copia de Consultorio Alessa-19 (1).jpg" alt="">
+                            <a href="#">
                             <div class="hover-galeria">
                                 <img src="/img/conoceme white.png" alt="">
                                 <p>Conóceme</p>
                             </div>
+                            </a>
                         </div>
                         <h3 class="nombre">Joel Villa</h3>
                     </div>
                     <div class="psicologo">
                         <div class="imagen-port">
                             <img src="img/Consultorio Alessa-23.jpg" alt="">
+                            <a href="#">
                             <div class="hover-galeria">
-                                <img src="/img/conoceme white.png" alt="">
+                                <img src="/img/conoceme white.png" alt=""> 
                                 <p>Conóceme</p>
                             </div>
+                            </a>
                         </div>
                         <h3 class="nombre">Jaime Bravo</h3>
                     </div>
                 </div>
         </section>
         <br>
-        <section>
+        <section class="section">
             <div class="contenedor">
                 <div class="Testimonios"> 
                     <h2 class="titulo">Testimonios</h2>
@@ -144,7 +195,7 @@
         <div class="contenedor-footer">
             <div class="content-foo">
                 <h4>Contacto</h4>
-                <p>56 3614 0438</p>
+                <p>+52 56 3614 0438</p>
             </div>
             <div class="content-foo">
                 <h4>Email</h4>
@@ -152,8 +203,8 @@
             </div>
             <div class="content-foo">
                 <h4>Ubicación</h4>
-                <p>Calle Tabasco 56, CDMX </p>
-                <p>Col. Roma Norte.</p>
+                <p>Calle Tabasco 56, CDMX<br>
+                Col. Roma Norte.</p>
             </div>
         </div>
         <div class="titulo-final"> 
