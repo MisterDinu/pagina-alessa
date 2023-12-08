@@ -11,12 +11,6 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
-/* 
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    min-width: 100%;
-    min-height: 100%;
-} */
 
 
 .top{
@@ -43,17 +37,6 @@ body{
     size-adjust: auto;
 } */
 
-.proceso{
-    flex-direction: row;
-    align-items: center;
-    height: 100px;
-    padding-bottom: 20px;
-}
-
-.columns{
-    align-items: center;
-    justify-content: space-around;
-}
 
 .ind{
     object-fit: cover;
@@ -66,17 +49,24 @@ body{
     background-color: rgba(92, 115, 169, 0.815);
 }
 
+.serv{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
 
 .servicios {
     background: #f2f2f2;
     display: flex;
-    justify-content: center; /* Añadido para centrar horizontalmente */
+    justify-content: center;
     align-items: center;
 }
 
 .galeria-port{
     display: flex;
-    justify-content: center; /* Añadido para centrar horizontalmente */
+    justify-content: center;
     align-items: center;
     max-width: 1000px;
     margin: 0;
@@ -136,4 +126,34 @@ body{
     flex-wrap: wrap;
     color: rgba(38, 152, 180);
     width: 100%; 
+}
+
+/* WEA DE NS */
+
+.caja {
+    background-color: #3498db;
+    padding: 20px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    width: 300px;
+    margin: 50px auto;
+  }
+
+.caja p {
+    color: #fff;
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+
+.proceso{
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+}
+
+.proceso h1{
+    font-size: 30px;
+    color: rgba(92, 115, 169, 0.815);
 }
