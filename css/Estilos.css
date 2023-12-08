@@ -52,7 +52,7 @@ header{
     /* fallback for old browsers */
     background: #6441A5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/iStock-1174443325.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,rgba(28, 94, 170, 0.651), rgba(35, 101, 158, 0.692)), url(../img/iStock-1174443325.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     /* padding-bottom: ; */
@@ -97,8 +97,8 @@ header{
     background: #373B44;  
     /* fallback for old browsers */
     background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/nuestro-s.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, rgb(113 89 158), rgb(113 89 158)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,rgba(139, 130, 221, 0.644), rgba(111, 102, 189, 0.61)), url(../img/nuestro-s.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 nav{
@@ -142,7 +142,7 @@ header .textos-header{
 
 .pf, .ns, .cost, .cont{
     display: flex;
-    height: 430px;
+    height: 460px;
     width: 100%;
     /* align-items: center; */
     /* justify-content: center; */
@@ -548,20 +548,6 @@ footer{
     .imagen-servicios {
         width: 90%; /* Ajustar el ancho de la imagen */
     }
-    
-    /* .costos {
-        padding-left: 50px;
-    }
-
-    .contenido-costos {
-        display: flex;
-        width: 70%; 
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        } */
-
 
     .contenido-costos {
         display: flex;

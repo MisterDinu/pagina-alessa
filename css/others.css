@@ -28,25 +28,11 @@ body {
 }
 
 
-/* .button{
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    size-adjust: auto;
-} */
-
-
 .ind{
     object-fit: cover;
     border-radius: 5%;
     width: auto;
     height: 140px;
-}
-
-.pasos{
-    background-color: rgba(92, 115, 169, 0.815);
 }
 
 .serv{
@@ -131,9 +117,9 @@ body {
 /* WEA DE NS */
 
 .caja {
-    background-color: #3498db;
+    background-color: rgb(137, 108, 192);
     padding: 20px;
-    border: 2px solid #2980b9;
+    border: 2px solid rgb(137, 108, 192);
     border-radius: 8px;
     width: 300px;
     margin: 50px auto;
@@ -155,5 +141,52 @@ body {
 
 .proceso h1{
     font-size: 30px;
-    color: rgba(92, 115, 169, 0.815);
+    color: rgba(30, 64, 143, 0.897);
+}
+
+
+/* PROCESO NS */
+.contepasos{
+    padding-left: 220px;
+    padding-right: 220px;
+}
+.paso {
+    width: 400px;
+    height: 250px;
+    background-color: rgb(139, 130, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    transition: opacity 0.5s, transform 0.5s;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    color: #f2f2f2;
+    padding-left: 20px;
+}
+
+.paso.active {
+    position: relative;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.paso:nth-child(odd) {
+    margin-right: auto; /* Alinea a la izquierda en pasos impares */
+    margin-left: 0;
+}
+
+.paso:nth-child(even) {
+    margin-left: auto; /* Alinea a la derecha en pasos pares */
+    margin-right: 0;
+}
+
+
+/* AJUSTES DE SCREEN */
+
+@media screen and (max-width: 567px){
+    .proceso{
+        padding-bottom: 160px;
+    }
 }
