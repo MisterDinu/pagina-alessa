@@ -16,38 +16,32 @@ body{
     overflow: hidden;
 }
 
-.contenedor-test{
-    padding: 60px 0;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
 .recomendaciones{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
     overflow: hidden;
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 8px;
     align-items: center;
-    padding-left: 150px;
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .titulo{
     color: rgba(92 115 169);
     font-size: 45px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 /* Header */
 
 header{
     width: 100%;
-    height: 650px;
+    height: 600px;
+    margin-bottom: 0;
     background: #373B44;  
     /* fallback for old browsers */
     background: #6441A5;  /* fallback for old browsers */
@@ -57,6 +51,7 @@ header{
     background-attachment: fixed;
     /* padding-bottom: ; */
     position: sticky;
+    background-position: center -100px;
 }
 
 /* HEADER DE LAS OTRAS ENTRADAS DE LA PÁGINA */
@@ -74,7 +69,9 @@ header{
     /* fallback for old browsers */
     background: #6441A5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/xd.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/contactowoman.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center -702px;
 }
 
 .cost{
@@ -91,6 +88,7 @@ header{
     background: #6441A5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/preguntas-f.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center -130px;
 }
 
 .ns{
@@ -99,6 +97,7 @@ header{
     background: #6441A5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, rgb(113 89 158), rgb(113 89 158)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right,rgba(139, 130, 221, 0.644), rgba(111, 102, 189, 0.61)), url(../img/nuestro-s.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center -150px;
 }
 
 nav{
@@ -124,10 +123,6 @@ nav > a:hover{
     color:#5f6470;
 }
 
-main{
-    padding-top: 60px;
-}
-
 header .textos-header{
     display: flex;
     height: 430px;
@@ -142,7 +137,7 @@ header .textos-header{
 
 .pf, .ns, .cost, .cont{
     display: flex;
-    height: 460px;
+    height: 410px;
     width: 100%;
     /* align-items: center; */
     /* justify-content: center; */
@@ -175,6 +170,7 @@ header .textos-header{
 .contenedor-servicios{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 0;
 }
 
 .imagen-servicios{
@@ -195,7 +191,7 @@ header .textos-header{
 }
 
 .contenido-textos h3 span{
-    background:rgba(37 135 177);
+    background:rgb(58, 87, 155);
     color: #ffff;
     border-radius: 50%;
     display: inline-block;
@@ -316,11 +312,15 @@ header .textos-header{
 
 /* TESTIMONIOS */
 
-.mail{
+.testimonios{
     display: flex;
     width: 100%;
     align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
 }
+
+
 
 .cards{
     display: flex;
@@ -441,6 +441,22 @@ footer{
 
 /* Para responsive mode */
 
+@media screen and (max-width:1380px){
+    .recomendaciones{
+        border-radius: 8px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    
+    .box{
+        width: 350px;
+    }
+
+}
+
+
 @media screen and (max-width:1080px){
     header{
         background-position: center;
@@ -517,6 +533,16 @@ footer{
     .nombres .nombre {
         font-size: 18px; /* Ajustar el tamaño de fuente de los nombres */
     }
+
+    .box{
+        width: 270px;
+        height: 440px;
+    }
+
+    #box3, #box4{
+        height: 350px;
+    }
+
 } 
 
 /* Segunda responsive */
@@ -623,20 +649,18 @@ footer{
         font-size: 28px;
     }
 
-/* 
-    .wave {
-
-    } */
+    .box{
+        width: 95%;
+    }
 }
 
 /* Cuarta responsive */
 
 @media screen and (max-width: 530px) {
-
     .contenido-costos{
         width: 90%;
     }
-
+    
     .contenido-costos h3 {
         font-size: 15px;
     }

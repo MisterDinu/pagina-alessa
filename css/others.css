@@ -44,7 +44,6 @@ body {
 
 
 .servicios {
-    background: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,6 +148,8 @@ body {
 .contepasos{
     padding-left: 220px;
     padding-right: 220px;
+    background-color: #f2f2f2;
+    padding-top: 48px;
 }
 .paso {
     width: 400px;
@@ -180,6 +181,10 @@ body {
 .paso:nth-child(even) {
     margin-left: auto; /* Alinea a la derecha en pasos pares */
     margin-right: 0;
+}
+
+.nsfoot{
+    padding-top: 80px;
 }
 
 
