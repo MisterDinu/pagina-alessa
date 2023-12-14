@@ -32,9 +32,33 @@
             </section>
         </header>
         <section class="mail">
-           <div>
-            <p>HEEEEEY</p>
-           </div>
+            <div class="contact-section">
+            <!-- WHATSAPP -->
+                <div class="contact-option firstcon">
+                  <h2>Escríbenos vía WhatsApp o llámanos</h2>
+                  <p>Horario: X am - X pm</p>
+                  <a href="https://wa.me/tunumerodewhatsapp" target="_blank">
+                    <img src="img/Whats logo.png" alt="WhatsApp">
+                  </a>
+                </div>
+            <!-- CORREO -->
+                <div class="contact-option">
+                  <h2>Mándanos un correo</h2>
+                  <form id="miFormulario" action="js/send_form.php" method="post">
+                    <!-- Tus campos del formulario aquí -->
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                
+                    <button type="submit">Enviar</button>
+                </form>
+                </div>
+              </div>
         </section>
 
     </body>

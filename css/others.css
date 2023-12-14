@@ -194,6 +194,84 @@ body {
 }
 
 
+/* CONTACTO SECCIÓN MAIL */
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .contact-option:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-option {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-option:hover {
+    background-color: #eee;
+  }
+  
+  .contact-option h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-option p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-option img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
 /* AJUSTES DE SCREEN */
 
 
