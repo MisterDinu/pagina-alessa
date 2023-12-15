@@ -1,27 +1,46 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $to = "centroalessa@gmail.com"; // Cambia esto con tu dirección de correo electrónico
-    
-    // Recoge los datos del formulario
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $subject = $_POST["subject"];  // Nueva línea para obtener el asunto
-    $message = $_POST["message"];
+    $nombre = $_POST['name'];
+    $email = $_POST['email'];
+    $mensaje = $_POST['message'];
 
-    // Crea el mensaje de correo
-    $mailBody = "Nombre: $name\n";
-    $mailBody .= "Correo electrónico: $email\n";
-    $mailBody .= "Asunto: $subject\n"; // Agrega el asunto al cuerpo del correo
-    $mailBody .= "Mensaje:\n$message";
+    $mensaje = "Este mensaje fue enviado por: " . $nombre . "\r\n";
+    $mensaje .= "Email: " . $email . "\r\n";
+    $mensaje .= "Mensaje: " . $_POST['message'] . "\r\n";
+    $mensaje .= "Enviado el " . date('d/m/Y', time());
+
+    $destino = "centroalessa@gmail.com";
+    $asunto = "Página Alessa";
 
     // Envía el correo
-    mail($to, $subject, $mailBody);
+    mail($destino, $asunto, utf8_decode($mensaje));
 
-    // Puedes redirigir a una página de agradecimiento o enviar una respuesta JSON, según tus necesidades.
-    echo json_encode(["success" => true, "message" => "Formulario enviado correctamente"]);
+    // Redirige después de enviar el correo
+    header('Location: exito.html');
 } else {
     // Si alguien intenta acceder directamente al script PHP, devolvemos un error.
     http_response_code(403);
     echo "Acceso prohibido";
 }
 ?>
+
+
+
+
+<?php
+// $nombre = $_POST['name'];
+// $email = $_POST['email'];
+// $mensaje = $_POST['message'];
+
+// $mensaje = "Este mensaje fue enviado por:" . $nombre . "\r\n";
+// $mensaje .= "Email:" . $email . "\r\n";
+// $mensaje .= "Mensaje:" . $_POST['message'] . "\r\n";
+// $mensaje .= "Enviado el " . date('d/m/Y', time());
+
+// $destino = "centroalessa@gmail.com";
+// $asunto = "Página Alessa";
+
+// // función mail
+// mail($para, $asunto, utf8_decode($mensaje), $header);
+
+// header('Location:exito.html');

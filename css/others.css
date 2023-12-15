@@ -259,7 +259,7 @@ body {
     margin-bottom: 10px;
   }
   
-  button {
+  .submitbutton {
     padding: 10px;
     background-color: #4caf50;
     color: white;
@@ -268,7 +268,7 @@ body {
     cursor: pointer;
   }
   
-  button:hover {
+  .submitbutton:hover {
     background-color: #45a049;
   }
 
