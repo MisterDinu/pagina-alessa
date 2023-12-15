@@ -116,9 +116,9 @@ body {
 /* WEA DE NS */
 
 .caja {
-    background-color: rgb(137, 108, 192);
+    background-color: rgb(127, 103, 170);
     padding: 20px;
-    border: 2px solid rgb(137, 108, 192);
+    border: 2px solid rgb(127, 103, 170);
     border-radius: 8px;
     width: 300px;
     margin: 50px auto;
@@ -127,7 +127,7 @@ body {
 .caja p {
     color: #fff;
     margin: 0;
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
   }
 
@@ -196,18 +196,44 @@ body {
 
 /* CONTACTO SECCIÓN MAIL */
 
+.msgcontacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    /* height: 200px; */
+}
+
+.msgcontacto p{
+    font-size: 27px;
+    text-align: center;
+}
+
+.boximg {
+    width: 200px;
+}
+
 .contact-section {
     display: flex;
     justify-content: space-around;
     margin: 20px;
+    align-items: center;
   }
   
-  .contact-option:first-child{
+
+.whats-option{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 30%;
+    transition: background-color 0.3s ease;
+  }  
+  
+  
+.mail-option{
+    width: 600px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -215,32 +241,33 @@ body {
     transition: background-color 0.3s ease;
   }
 
-  .contact-option {
-    width: 30%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-option:hover {
+  .whats-option:hover, .mail-option:hover {
     background-color: #eee;
   }
   
-  .contact-option h2 {
+  .whats-option h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .mail-option h2 {
     font-size: 18px;
     margin-bottom: 10px;
   }
   
-  .contact-option p {
+  .whats-option p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .mail-option p {
     font-size: 14px;
     margin-bottom: 15px;
   }
   
-  .contact-option img {
-    width: 300px;
-    height: 300px;
+  .whats-option img {
+    width: 200px;
+    height: 200px;
     cursor: pointer;
   }
   
@@ -259,17 +286,25 @@ body {
     margin-bottom: 10px;
   }
   
-  button {
+  .submitbutton {
     padding: 10px;
     background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    align-items: center;
   }
   
-  button:hover {
+  .submitbutton:hover {
     background-color: #45a049;
+  }
+
+  .boton-mail{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 /* AJUSTES DE SCREEN */
@@ -291,6 +326,18 @@ body {
         width: 300px;
         height: 188px;
     }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        align-items: center;
+      }
+
+      .whats-option{
+        text-align: center;
+      }  
     
 }
 
