@@ -1,27 +1,54 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $to = "centroalessa@gmail.com"; // Cambia esto con tu dirección de correo electrónico
-    
-    // Recoge los datos del formulario
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $subject = $_POST["subject"];  // Nueva línea para obtener el asunto
-    $message = $_POST["message"];
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+ 
+// Importar clases de PHPMailer
+require 'vendor/autoload.php';
 
-    // Crea el mensaje de correo
-    $mailBody = "Nombre: $name\n";
-    $mailBody .= "Correo electrónico: $email\n";
-    $mailBody .= "Asunto: $subject\n"; // Agrega el asunto al cuerpo del correo
-    $mailBody .= "Mensaje:\n$message";
 
-    // Envía el correo
-    mail($to, $subject, $mailBody);
 
-    // Puedes redirigir a una página de agradecimiento o enviar una respuesta JSON, según tus necesidades.
-    echo json_encode(["success" => true, "message" => "Formulario enviado correctamente"]);
+
+if ($_SERVER["REQUEST_METHOD"] === "POST"){
+
+    // DATOS DEL FORMULARIO
+    $nombre = $_POST['name'];
+    $email = $_POST['email'];
+    $mensaje = $_POST['message'];
+
+    $mail = new PHPMailer(true);
+
+    try {
+        //Server settings
+        $mail->SMTPDebug = 2;
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+        $mail->Username   = 'centroalessa@gmail.com';                     //SMTP username
+        $mail->Password   = 'yugewyztwxtorfwm';                               //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+        //Recipients
+        $mail->setFrom($email, $nombre);
+        $mail->addAddress('centroalessa@gmail.com');     //Add a recipient
+
+        //Content
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = 'Pagina Alessa: '. $email;
+        $mail->Body    = 'Mensaje de: '. $nombre. '<br>' . $mensaje; 
+
+        $mail->send();
+
+        header('Location: ../exito.html');
+
+        } catch (Exception $e) {
+        // Manejar errores en el envío del correo
+        echo "Error al enviar el formulario. Detalles: {$mail->ErrorInfo}";
+    }
 } else {
     // Si alguien intenta acceder directamente al script PHP, devolvemos un error.
     http_response_code(403);
     echo "Acceso prohibido";
 }
+
 ?>
