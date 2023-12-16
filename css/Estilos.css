@@ -77,6 +77,9 @@ header{
     background: #6441A5; 
     background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); 
     background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/Costo.jpg); 
+    background-position: center -622px;
+    background-size: cover;
+
 }
 
 .pf{
@@ -122,12 +125,6 @@ nav .navpf, .navns, .navcont{
     padding-bottom: 0px;
     max-width: 100%;
 }
-
-/* .bc1, .bc2 {
-    display: block;
-    align-items: start;
-    max-width: 100%;
-} */
 
 .burguer{
     max-width: 100%;
