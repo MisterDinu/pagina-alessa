@@ -36,6 +36,34 @@ body{
     margin-bottom: 45px;
 }
 
+/* COLORES */
+/*  
+Azul clarito
+    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.394),
+    rgba(49, 138, 216, 0.682));
+    background: linear-gradient(to right,rgba(70, 147, 235, 0.651),
+    rgba(35, 101, 158, 0.692))
+
+Moradito azulado
+    background: -webkit-linear-gradient(to right, rgba(135, 129, 191, 0.586),
+    rgba(97, 86, 219, 0.54));
+    background: linear-gradient(to right,rgba(68, 56, 172, 0.555),
+    rgba(122, 114, 211, 0.646))
+
+Moradito normal
+    background: -webkit-linear-gradient(to right,rgba(92, 84, 160, 0.543),
+    rgba(83, 75, 154, 0.528));
+    background: linear-gradient(to right,rgba(92, 84, 160, 0.543),
+    rgba(83, 75, 154, 0.528))
+    
+Azul Alessa
+    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479),
+    rgba(49, 138, 216, 0.548));
+    background: linear-gradient(to right,rgba(29, 121, 226, 0.479),
+    rgba(49, 138, 216, 0.548))
+
+*/
+
 /* Header */
 
 header{
@@ -43,13 +71,13 @@ header{
     height: 600px;
     margin-bottom: 0;
     background: #373B44;  
-    /* fallback for old browsers */
-    background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right,rgba(28, 94, 170, 0.651), rgba(35, 101, 158, 0.692)), url(../img/iStock-1174443325.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right,rgba(57, 128, 208, 0.672),
+    rgba(35, 101, 158, 0.414));
+    background: linear-gradient(to right,rgba(57, 128, 208, 0.672),
+    rgba(35, 101, 158, 0.414)), url(../img/iStock-1174443325.jpg);
     background-size: cover;
     background-attachment: fixed;
-    /* padding-bottom: ; */
     position: sticky;
     background-position: center -100px;
 }
@@ -66,8 +94,10 @@ header{
 .cont{
     background: #373B44;  
     background: #6441A5; 
-    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); 
-    background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/contactowoman.jpg);
+    background: -webkit-linear-gradient(to right, rgba(135, 129, 191, 0.586),
+    rgba(97, 86, 219, 0.54));
+    background: linear-gradient(to right,rgba(68, 56, 172, 0.555),
+    rgba(122, 114, 211, 0.646)), url(../img/contactowoman.jpg);
     background-size: cover;
     background-position: center -472px;
 }
@@ -75,8 +105,10 @@ header{
 .cost{
     background: #373B44;  
     background: #6441A5; 
-    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); 
-    background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/Costo.jpg); 
+    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479),
+    rgba(49, 138, 216, 0.548)); 
+    background: linear-gradient(to right,rgba(29, 121, 226, 0.479),
+    rgba(49, 138, 216, 0.548)), url(../img/Costo.jpg); 
     background-position: center -622px;
     background-size: cover;
 
@@ -84,19 +116,21 @@ header{
 
 .pf{
     background: #373B44;  
-    /* fallback for old browsers */
-    background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right,rgba(29, 121, 226, 0.479), rgba(49, 138, 216, 0.548)), url(../img/preguntas-f.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right, rgba(29, 121, 226, 0.479),
+    rgba(49, 138, 216, 0.548));
+    background: linear-gradient(to right,rgba(29, 121, 226, 0.479),
+    rgba(49, 138, 216, 0.548)), url(../img/preguntas-f.jpeg);
     background-position: center -130px;
 }
 
 .ns{
     background: #373B44;  
-    /* fallback for old browsers */
-    background: #6441A5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgb(113 89 158), rgb(113 89 158)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right,rgba(139, 130, 221, 0.644), rgba(111, 102, 189, 0.61)), url(../img/nuestro-s.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right,rgba(92, 84, 160, 0.543),
+    rgba(83, 75, 154, 0.528));
+    background: linear-gradient(to right,rgba(92, 84, 160, 0.543),
+    rgba(83, 75, 154, 0.528)), url(../img/nuestro-s.jpeg);
     background-position: center -150px;
 }
 
@@ -266,7 +300,7 @@ header .textos-header{
     padding-right: 35px;
     width: 60%;
     height: 60%;
-    border-radius: 16%;
+    border-radius: 5%;
 }
 
 .contenedor-servicios .contenido-textos{
@@ -318,7 +352,7 @@ header .textos-header{
     padding-right: 20px;
     object-fit: contain;
     display: block;
-    border-radius: 25px;
+    border-radius: 5%;
 }
 
 .textos-costos {
