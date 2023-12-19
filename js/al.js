@@ -1,11 +1,3 @@
-// FOR THE HEADER BURGUER NAV BUTTON
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('burguerBtn').addEventListener('click', function() {
-        var navMenu = document.querySelector('.navcost');
-        navMenu.classList.toggle('show-menu');
-    });
-});
 // FOR THE NS PASOS SECTION, TEXT BOX APPEARS WHEN SCROLLING
 
 document.addEventListener('scroll', reveal)

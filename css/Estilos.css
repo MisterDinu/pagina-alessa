@@ -68,18 +68,19 @@ Azul Alessa
 
 header{
     width: 100%;
-    height: 600px;
+    height: 700px;
     margin-bottom: 0;
+    padding-bottom: 0;
     background: #373B44;  
     background: #6441A5;
     background: -webkit-linear-gradient(to right,rgba(57, 128, 208, 0.672),
     rgba(35, 101, 158, 0.414));
     background: linear-gradient(to right,rgba(57, 128, 208, 0.672),
-    rgba(35, 101, 158, 0.414)), url(../img/iStock-1174443325.jpg);
+    rgba(35, 101, 158, 0.414)), url(../img/header1.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: sticky;
-    background-position: center -100px;
+    background-position: center -60px;
 }
 
 /* HEADER DE LAS OTRAS ENTRADAS DE LA PÁGINA */
@@ -111,7 +112,7 @@ header{
     rgba(49, 138, 216, 0.548)), url(../img/Costo.jpg); 
     background-position: center -622px;
     background-size: cover;
-
+    padding-top: 0;
 }
 
 .pf{
@@ -216,7 +217,7 @@ nav .navpf, .navns, .navcont{
 
 .show-menu a {
     display: flex;
-    background-color: #ffff;
+    background-color: #ffffff6b;
     color: #000;
     pointer-events: auto;
 }
@@ -442,79 +443,7 @@ header .textos-header{
     box-sizing: border-box;
 }
 
-
-
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cards .card{
-    background: rgb(92 115 169);
-    display: flex;
-    width: 46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6)
-}
-
-.cards .card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
-}
-
-.cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
-
-}
-
-.cards .card > .contenido-texto-card p{
-    font-weight: 300px;
-    padding-top: 5px;
-}
-
-.cards2{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cards2 .card{
-    background: rgba(38, 152, 180);
-    display: flex;
-    width: 46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6)
-}
-
-.cards2 .card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
-}
-
-.cards2 .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
-
-}
-
-.cards2 .card > .contenido-texto-card p{
-    font-weight: 300px;
-    padding-top: 5px;
-}
+/* FOOTER */
 
 footer{
     /* height: 200px; */
@@ -927,4 +856,7 @@ footer{
         height: 34%;
     }
 
+    .hover-galeria img{
+        width: 80px;
+    }
 }
