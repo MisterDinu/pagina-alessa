@@ -12,15 +12,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 </head>
 <body>
     <header>        
-        <nav class="nav">
-            <a href="index.html">Inicio</a>
-            <a href="nuestro-servicio.html">Nuestro Servicio</a>
-            <a href="costos.html">Costos</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src='img/logo 18x18c.png'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nuestro-servicio.html">Nuestro Servicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
         </nav>
         <div class="wave" style="height: 300px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C187.63,125.83 301.63,48.86 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#ffff;"></path></svg></div>
         <section class="textos-header">
@@ -53,7 +61,7 @@
             <h2 class="titulo">Costos</h2>
             <br>
             <div class="contenedor-costos">
-                <div class="box has-background-info-light">
+                <div class="box has-background-white-ter">
                     <div class="columns">
                         <div class="column is-full">
                         <p class="title is-4 has-text-centered">Invierte en lo más importante, ¡tú!</p>
@@ -121,39 +129,38 @@
                     </div>
                 </div>
         </section>
-        <section class="section">
+        <section class="section">         
             <div class="testimonios"> 
                 <h2 class="titulo">Testimonios</h2>
-                <div class="recomendaciones">
-                    <div class="columns">
-                    <!-- Lorena -->
-                        <div class="column is-one-third">
-                            <iframe class="box has-background-link-light" id="box1" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/loren.pack.5/posts/pfbid032DvNkcvFDPozdYmq8YXnDjojMTEC7ukoBVKxh6QNTv9fuxUtEMvn54U6CauXtzqwl&amp;width=100" 
-                            width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        </div>
-                        <!-- Espacio entre divs -->
-                        <div class="column is-one-third"></div>
-                    <!-- Kary -->
-                        <div class="column is-one-third">
-                            <iframe class="box has-background-link-light" id="box2" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/karyrfabila/posts/pfbid04DuaGwivtGLinWMZ72SYAp951Tu7UW7BMmBhWuzQcjZRYK6QwqVFEJmKYBsZ5ZJfl&amp;width=100" 
-                            width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        </div>
+                <!-- <div class="recomendaciones"> -->
+                <div class="columns">
+                <!-- Lorena -->
+                    <div class="column is-one-third">
+                        <iframe class="box has-background-white-ter" id="box1" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/loren.pack.5/posts/pfbid032DvNkcvFDPozdYmq8YXnDjojMTEC7ukoBVKxh6QNTv9fuxUtEMvn54U6CauXtzqwl&amp;width=100" 
+                        width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
-                    <div class="columns">
-                    <!-- Alma -->
-                        <div class="column is-one-third">
-                            <iframe class="box has-background-info-light" id="box3" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/almagabriela.vargasalbarran/posts/pfbid02PkCMiyv6niTGVahTzyP5VFGbGFG7WNmVsC8PhYipbAZZ4gM3rxzyP8javsToccSAl&amp;width=100" 
-                            width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        </div>
-                        <!-- Espacio entre divs -->
-                        <div class="column is-one-third"></div>
-                    <!-- Circe -->
-                        <div class="column is-one-third">
-                            <iframe class="box has-background-info-light" id="box4" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/fabiolacir/posts/pfbid036uxyvsoSpZ7HeBVkGJjbnvn5AZ9KGXW3YcawrcXAsX49U7qq79kgKdMzeS6nN8dSl&amp;width=100" 
-                            width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        </div>
-                    </div>    
+                <!-- Espacio entre divs -->
+                    <div class="column is-one-fifth"></div>
+                <!-- Kary -->
+                    <div class="column is-one-third">
+                        <iframe class="box has-background-white-ter" id="box2" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/karyrfabila/posts/pfbid04DuaGwivtGLinWMZ72SYAp951Tu7UW7BMmBhWuzQcjZRYK6QwqVFEJmKYBsZ5ZJfl&amp;width=100" 
+                        width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
                 </div>
+                <div class="columns">
+                <!-- Alma -->
+                    <div class="column is-one-third">
+                        <iframe class="box has-background-white-ter" id="box3" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/almagabriela.vargasalbarran/posts/pfbid02PkCMiyv6niTGVahTzyP5VFGbGFG7WNmVsC8PhYipbAZZ4gM3rxzyP8javsToccSAl&amp;width=100" 
+                        width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                <!-- Espacio entre divs -->
+                    <div class="column is-one-fifth"></div>
+                <!-- Circe -->
+                    <div class="column is-one-third">
+                        <iframe class="box has-background-white-ter" id="box4" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/fabiolacir/posts/pfbid036uxyvsoSpZ7HeBVkGJjbnvn5AZ9KGXW3YcawrcXAsX49U7qq79kgKdMzeS6nN8dSl&amp;width=100" 
+                        width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>    
             </div>
         </section>
     </Main>

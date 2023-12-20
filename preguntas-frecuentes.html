@@ -12,17 +12,25 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
     </head>
 <!-- Se utiliza la misma base de index, pero modificando el width del estilo wave, y con otra imagen-->
 
     <body>
         <header class="pf">        
-            <nav class="navpf">
-                <a href="index.html">Inicio</a>
-                <a href="nuestro-servicio.html">Nuestro Servicio</a>
-                <a href="costos.html">Costos</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+            <nav>
+                <ul class='nav-bar'>
+                    <li class='logo'><a href='index.html'><img src='img/logo 18x18c.png'/></a></li>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nuestro-servicio.html">Nuestro Servicio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
             </nav>
             <div class="wave" style="height: 300px; overflow: hidden;" ><svg viewBox="0 0 500 110" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C187.63,125.83 301.63,48.86 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#ffff;"></path></svg></div>

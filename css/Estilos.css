@@ -135,116 +135,92 @@ header{
     background-position: center -150px;
 }
 
-/* NAV PRINCIPAL Y DE OTRAS PÁGINAS */
+/* NUEVO NAV */
 
-nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-nav .navpf, .navns, .navcont{
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-/* INICIA PARA EL BURGUER QUE APARECE EL MENU AL HACER HOVER */
-
-/* BURGUER NAV */
-
-
-.betterCost {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 100px;
-    padding-bottom: 0px;
-    max-width: 100%;
-}
-
-.burguer{
-    max-width: 100%;
-    padding-top: 20px;
-    padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    width: 3rem;
-    height: 3rem;
-    border: 0;
-    background: transparent;
-    gap: .65rem;
-}
-
-.burguer > div {
-    background: rgb(255, 255, 255);
-    height: 2px;
+.nav-bar {
     width: 100%;
-    border-radius: 10px;
-    transition: all .5s;
-    transform-origin: left;
-}
-
-.burguer:hover div:first-child{
-    transform: rotate(31deg);
-}
-
-.burguer:hover div:nth-child(2){
-    opacity: 0;
-}
-
-.burguer:hover div:last-child{
-    transform: rotate(-31deg);
-}
-
-/* BURGUER NAV */
-
- .navcost {
     display: flex;
-    align-items: flex-start;
-    padding-left: 400px;
-    max-width: 100%;
-}
-
-.navcost a {
-    display: block;
-    margin-left: 10px;
-    padding: 10px;
-    text-decoration: none;
-    color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
     position: relative;
-    background-color: transparent;
-    pointer-events: none;
+    background-color: var(--color2);
+    padding: 12px 20px;
 }
 
-.show-menu a {
+  .logo img {
+  width: 60px;
+}
+  .menu {
     display: flex;
-    background-color: #ffffff6b;
-    color: #000;
-    pointer-events: auto;
+  }
+
+  .menu li {
+    padding-left: 30px;
+  }
+
+  .menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+    .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ffff;
+    transition: 0.15s ease-in-out;
+}
+    .menu li a:hover:after {
+  width: 100%;
+}
+    .open-menu , .close-menu {
+    position: absolute;
+    color: #f2f2f2;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+    .open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+    .close-menu {
+    top: 20px;
+    right: 20px;
+}
+    #check {display: none;}
+
+
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgba(57, 128, 208, 0.672);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
 }
 
-/* Estilos para el cuadro blanco que se vuelve gris al hacer hover */
-
-.navcost a:hover {
-    background-color: #ccc;
-}
-
-
-/* TERMINA PRUEBA PARA EL BURGUER QUE APARECE EL MENU AL HACER HOVER */
-
-
-nav > a {
-    font-weight: 400px;
-    color: #fff;
-    text-decoration: none ;
-    margin-right: 10px;
-    font-size: 18px;
-}
-
-nav > a:hover{
-    text-decoration: underline ;
-    color:#5f6470;
-}
-/* FIN NAVS */
+/* FIN DE NUEVO NAV */
 
 header .textos-header{
     display: flex;
@@ -441,6 +417,10 @@ header .textos-header{
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+}
+
+.recomendaciones{
+    padding-bottom: 10px;
 }
 
 /* FOOTER */
@@ -707,7 +687,11 @@ footer{
 
 /* Cuarta responsive */
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 545px) {
+    .textos-header h1{
+        font-size: 40px;
+    }
+
     .contenido-costos{
         width: 90%;
     }
@@ -769,12 +753,7 @@ footer{
     .titulo-final{
         font-size: 16px;
     }
-  }
-  
-  
-  
-  
-  
+  }  
 
 /* Quinta responsive */
 
