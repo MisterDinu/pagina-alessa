@@ -222,6 +222,36 @@ header{
 
 /* FIN DE NUEVO NAV */
 
+/* BOTON VOLVER AL INICIO */
+
+#btnArriba {
+    display: none;
+    position: fixed;
+    top: 92%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    animation: fadeIn 0.5s ease-in-out;
+    cursor: pointer;
+    width: 100px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* FIN BOTON VOLVER AL INICIO */
+
 header .textos-header{
     display: flex;
     height: 430px;
@@ -752,6 +782,10 @@ footer{
 
     .titulo-final{
         font-size: 16px;
+    }
+    #btnArriba {
+        width: 85px;
+        padding-right: 30px;
     }
   }  
 
