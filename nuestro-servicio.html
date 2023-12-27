@@ -15,7 +15,6 @@
     <script src="js/al.js"></script>
 </head>
 <!-- Se utiliza la misma base de index, pero modificando el width del estilo wave, y con otra imagen-->
-
 <body>
   <header class="ns">
     <nav>
@@ -39,107 +38,113 @@
       <h1>NUESTRO SERVICIO</h1>
     </section>
   </header>
-  <!-- MEJORAR LA BOX Y HACERLO BONITO -->
-  <section class="serv">
-    <div class="proceso">
-      <div class="box">
-        <h1>
-        Participa en tu proceso psicoterapéutico de forma activa e informada
-        </h1>        
+  <main>
+    <button id="btnArriba" class="fadeIn" onclick="volverArriba()">
+      <img src="img/volver 2.png" alt="">
+    </button>
+    <!-- MEJORAR LA BOX Y HACERLO BONITO -->
+    <section class="serv">
+      <div class="proceso">
+        <div class="box">
+          <h1>
+          Participa en tu proceso psicoterapéutico de forma activa e informada
+          </h1>        
+        </div>
       </div>
-    </div>
-    <div class="caja">
-      <p>Servicios disponibles:</p>
-    </div>
-    <!-- PREVIOUS CODE -->
-  </section>
-  <section class="servicios section">
-    <div class="contenedor">
-      <div class="galeria-port">
-        <div class="servicio">
-          <div class="imagen-port">
-            <img src="img/pareja.jpg" alt="">
-            <!-- MANDAR A LA PARTE DE LA PÁGINA DONDE SE EXPLICA CADA SERVICIO -->
+      <div class="caja">
+        <p>Servicios disponibles:</p>
+      </div>
+      <!-- PREVIOUS CODE -->
+    </section>
+    <section class="servicios section">
+      <div class="contenedor">
+        <div class="galeria-port">
+          <div class="servicio">
+            <div class="imagen-port">
+              <img src="img/pareja.jpg" alt="">
+              <!-- MANDAR A LA PARTE DE LA PÁGINA DONDE SE EXPLICA CADA SERVICIO -->
+                <a href="#">
+                  <div class="hover-galeria">
+                    <img src="/img/conoceme white.png" alt="">
+                    <p>Conoce más</p>
+                  </div>
+                </a>
+            </div>
+            <h3 class="nombre-servicio">Terapia de pareja</h3>
+          </div>
+          <div class="servicio">
+            <div class="imagen-port">
+              <img src="img/Individual.jpg" alt="">
               <a href="#">
-                <div class="hover-galeria">
-                  <img src="/img/conoceme white.png" alt="">
-                  <p>Conoce más</p>
-                </div>
+              <div class="hover-galeria">
+                <img src="/img/conoceme white.png" alt="">
+                <p>Conoce más</p>
+              </div>
               </a>
-          </div>
-          <h3 class="nombre-servicio">Terapia de pareja</h3>
-        </div>
-        <div class="servicio">
-          <div class="imagen-port">
-            <img src="img/Individual.jpg" alt="">
-            <a href="#">
-            <div class="hover-galeria">
-              <img src="/img/conoceme white.png" alt="">
-              <p>Conoce más</p>
             </div>
-            </a>
+            <h3 class="nombre-servicio">Terapia individual</h3>
           </div>
-          <h3 class="nombre-servicio">Terapia individual</h3>
-        </div>
-        <div class="servicio">
-          <div class="imagen-port">
-            <img src="img/chamacos.jpg" alt="">
-            <a href="#">
-            <div class="hover-galeria">
-              <img src="/img/conoceme white.png" alt=""> 
-              <p>Conoce más</p>
+          <div class="servicio">
+            <div class="imagen-port">
+              <img src="img/chamacos.jpg" alt="">
+              <a href="#">
+              <div class="hover-galeria">
+                <img src="/img/conoceme white.png" alt=""> 
+                <p>Conoce más</p>
+              </div>
+              </a>
             </div>
-            </a>
+            <h3 class="nombre-servicio">Terapia infantil</h3>
           </div>
-          <h3 class="nombre-servicio">Terapia infantil</h3>
+        </div>
+    </section>
+    <section class="contepasos">
+      <div class="paso" id="paso1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id officia quas, quae dicta voluptates vitae doloremque aperiam reiciendis esse animi!
+        </div>
+        <div class="paso" id="paso2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quibusdam possimus excepturi ducimus, nemo odit in officiis dolor animi nesciunt?
+        </div>
+        <div class="paso" id="paso3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem dolor saepe nesciunt numquam soluta mollitia error, corporis magnam hic!
+        </div>
+        <div class="paso" id="paso4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae placeat reprehenderit sunt saepe sit ad delectus reiciendis quos eligendi.
+        </div>
+
+        <!-- PONER BOTÓN MÁS BONITO -->
+
+        <div class="buttons has-addons is-centered">
+          <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión" target="_blank">
+              <button class="button has-background-info-dark is-rounded is-large">
+                  <p class="subtitle has-text-white">¡Agenda tu sesión aquí!</p>
+              </button>
+          </a>
+        </div>
+    </section>
+    <footer class="nsfoot">
+      <div class="contenedor-footer">
+        <div class="content-foo">
+          <h4>Contacto</h4>
+          <p>+52 56 3614 0438</p>
+        </div>
+        <div class="content-foo">
+          <h4>Email</h4>
+          <a href="mailto:centroalessa@gmail.com" target="_blank">
+              <p>centroalessa@gmail.com</p>
+          </a>
+        </div>
+        <div class="content-foo">
+          <h4>Ubicación</h4>
+          <p>Calle Tabasco 56, CDMX<br>
+          Col. Roma Norte.</p>
         </div>
       </div>
-  </section>
-  <section class="contepasos">
-    <div class="paso" id="paso1">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id officia quas, quae dicta voluptates vitae doloremque aperiam reiciendis esse animi!
+      <div class="titulo-final"> 
+        <h3> &copy; Centro de Atención Psicológica: Alessa</h3>
       </div>
-      <div class="paso" id="paso2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quibusdam possimus excepturi ducimus, nemo odit in officiis dolor animi nesciunt?
-      </div>
-      <div class="paso" id="paso3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem dolor saepe nesciunt numquam soluta mollitia error, corporis magnam hic!
-      </div>
-      <div class="paso" id="paso4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae placeat reprehenderit sunt saepe sit ad delectus reiciendis quos eligendi.
-      </div>
+    </footer>    
+  </main>
 
-      <!-- PONER BOTÓN MÁS BONITO -->
-
-      <div class="buttons has-addons is-centered">
-        <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión" target="_blank">
-            <button class="button has-background-info-dark is-rounded is-large">
-                <p class="subtitle has-text-white">¡Agenda tu sesión aquí!</p>
-            </button>
-        </a>
-      </div>
-  </section>
-  <footer class="nsfoot">
-    <div class="contenedor-footer">
-      <div class="content-foo">
-        <h4>Contacto</h4>
-        <p>+52 56 3614 0438</p>
-      </div>
-      <div class="content-foo">
-        <h4>Email</h4>
-        <a href="mailto:centroalessa@gmail.com" target="_blank">
-            <p>centroalessa@gmail.com</p>
-        </a>
-      </div>
-      <div class="content-foo">
-        <h4>Ubicación</h4>
-        <p>Calle Tabasco 56, CDMX<br>
-        Col. Roma Norte.</p>
-      </div>
-    </div>
-    <div class="titulo-final"> 
-      <h3> &copy; Centro de Atención Psicológica: Alessa</h3>
-    </div>
-  </footer>
 </body>
 </html>

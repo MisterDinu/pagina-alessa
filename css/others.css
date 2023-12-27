@@ -203,7 +203,6 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 100px;
-    /* height: 200px; */
 }
 
 .msgcontacto p{
@@ -289,12 +288,13 @@ body {
   
   .submitbutton {
     padding: 10px;
-    background-color: #4caf50;
+    background-color: rgb(38, 152, 180);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     align-items: center;
+    width: 300px;
   }
   
   .submitbutton:hover {
@@ -329,16 +329,22 @@ body {
     }
 
     .contact-section {
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 20px;
         align-items: center;
-      }
+    }
 
-      .whats-option{
-        text-align: center;
-      }  
+    .whats-option{
+      text-align: center;
+    }
+    
+    .mail-option{
+      max-width: 100%;
+    }
+
     
 }
 
