@@ -17,8 +17,20 @@ function mostrarBoton() {
 // Función para ocultar el botón
 function volverArriba() {
     document.body.scrollTop = 0; // 
-    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+    document.documentElement.scrollTop = 0;
 }
+
+// PARA MOSTRAR Y CERRAR CARD
+
+function mostrarModal(idModal) {
+    var modal = document.getElementById(idModal);
+    modal.style.display = 'flex';
+  }
+  
+  function cerrarModal(idModal) {
+    var modal = document.getElementById(idModal);
+    modal.style.display = 'none';
+  }
 
 
 // FOR THE NS PASOS SECTION, TEXT BOX APPEARS WHEN SCROLLING
@@ -40,4 +52,3 @@ function reveal(){
         }
     }
 }
-

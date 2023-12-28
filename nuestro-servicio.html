@@ -21,7 +21,7 @@
       <ul class='nav-bar'>
           <li class='logo'><a href='index.html'><img src='img/logo 18x18c.png'/></a></li>
           <input type='checkbox' id='check' />
-          <span class="menu">
+          <span class="menu-ns">
               <li><a href="index.html">Inicio</a></li>
               <li><a href="nuestro-servicio.html">Nuestro Servicio</a></li>
               <li><a href="contacto.html">Contacto</a></li>
@@ -34,7 +34,7 @@
     <div class="wave" style="height: 300px; overflow: hidden;" ><svg viewBox="0 0 500 110" preserveAspectRatio="none" style="height: 100%; width: 100%;">
       <path d="M0.00,49.98 C187.63,125.83 301.63,48.86 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#ffff;"></path></svg>
     </div>
-    <section class="textos-header">
+    <section class="texto-ns">
       <h1>NUESTRO SERVICIO</h1>
     </section>
   </header>
@@ -58,43 +58,65 @@
       <div class="contenedor">
         <div class="galeria-port">
           <div class="servicio">
-            <div class="imagen-port">
+            <div class="imagen-port" onclick="mostrarModal('modalPareja')">
               <img src="img/pareja.jpg" alt="">
-              <!-- MANDAR A LA PARTE DE LA PÁGINA DONDE SE EXPLICA CADA SERVICIO -->
-                <a href="#">
-                  <div class="hover-galeria">
-                    <img src="/img/conoceme white.png" alt="">
-                    <p>Conoce más</p>
-                  </div>
-                </a>
+                <div class="hover-galeria">
+                  <img src="/img/conoceme white.png" alt="">
+                  <p>Conoce más</p>
+                </div>
             </div>
             <h3 class="nombre-servicio">Terapia de pareja</h3>
           </div>
           <div class="servicio">
-            <div class="imagen-port">
+            <div class="imagen-port" onclick="mostrarModal('modalIndi')">
               <img src="img/Individual.jpg" alt="">
-              <a href="#">
               <div class="hover-galeria">
                 <img src="/img/conoceme white.png" alt="">
                 <p>Conoce más</p>
               </div>
-              </a>
             </div>
             <h3 class="nombre-servicio">Terapia individual</h3>
           </div>
           <div class="servicio">
-            <div class="imagen-port">
+            <div class="imagen-port" onclick="mostrarModal('modalInfant')">
               <img src="img/chamacos.jpg" alt="">
-              <a href="#">
               <div class="hover-galeria">
                 <img src="/img/conoceme white.png" alt=""> 
                 <p>Conoce más</p>
               </div>
-              </a>
             </div>
             <h3 class="nombre-servicio">Terapia infantil</h3>
           </div>
         </div>
+      </div>
+      <!-- CUADRO QUE APARECE AL HACER CLICK EN IMÁGENES -->
+      <div class="modal" id="modalPareja">
+        <div class="modal-contenido">
+          <span class="cerrar-modal" onclick="cerrarModal('modalPareja')">&times;</span>
+          <h2>Terapia de pareja</h2>
+          <p> La terapia de pareja está bien chida
+            y de seguro te encantará
+          </p>
+        </div>
+      </div>
+      <div class="modal" id="modalIndi">
+        <div class="modal-contenido">
+          <span class="cerrar-modal" onclick="cerrarModal('modalIndi')">&times;</span>
+          <h2>Terapia Individual</h2>
+          <p> La terapia individual está bien chida
+            y de seguro te encantará
+          </p>
+        </div>
+      </div>
+      <div class="modal" id="modalInfant">
+        <div class="modal-contenido">
+          <span class="cerrar-modal" onclick="cerrarModal('modalInfant')">&times;</span>
+          <h2>Terapia Infantil</h2>
+          <p> La terapia infantil está bien chida
+            y de seguro le encantará a tu escuincle
+          </p>
+        </div>
+      </div>
     </section>
     <section class="contepasos">
       <div class="paso" id="paso1">
