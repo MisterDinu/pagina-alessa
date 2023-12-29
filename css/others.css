@@ -401,8 +401,37 @@ body {
   }
 
 
+/* PF ESTILAZO */
+  
+.pf-minimal{
+  display: flex;
+  max-width: 100%;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton-pf{
+  padding: 10px;
+  background-color: rgb(38, 152, 180);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+}
+
+.boton-pf p{
+  font-size: 20px;
+}
+
+
+
 
 /* AJUSTES DE SCREEN */
+
 
 
 @media screen and (max-width: 912px) {
@@ -505,6 +534,15 @@ body {
 
     .msgcontacto p{
       font-size: 20px;
+    }
+    
+    .boton-pf{
+      width: 200px;
+      height: 50px;
+    }
+
+    .boton-pf p{
+      font-size: 13px;
     }
 }
 

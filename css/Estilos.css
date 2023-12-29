@@ -105,6 +105,7 @@ header{
     background-attachment: fixed;
     position: sticky;
     background-position: center -320px;
+    background-repeat: no-repeat;
 }
 
 .cost{
@@ -749,7 +750,7 @@ footer{
     }
     
     .texto-pf{
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .texto-con{
@@ -828,6 +829,10 @@ footer{
     #btnArriba {
         width: 85px;
         padding-right: 30px;
+    }
+    .cont {
+        background-attachment: scroll;
+        background-position: center;
     }
   }  
 
