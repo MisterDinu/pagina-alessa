@@ -12,15 +12,40 @@ body {
     margin: 0 auto;
 }
 
+/* HEADER PSICOLOGOS */
+
+.psicos{
+  background: #373B44;  
+  background: #6441A5; 
+  background: -webkit-linear-gradient(to right, rgba(108, 116, 228, 0.644),
+  rgba(109, 103, 163, 0.692));
+  background: linear-gradient(to right, rgba(108, 116, 228, 0.644),
+  rgba(109, 103, 163, 0.692));
+  background-size: cover;
+  background-attachment: fixed;
+  position: sticky;
+  background-position: center -380px;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 380px;
+  width: 100%;
+  padding-bottom: 300px;
+  flex-direction: column;
+  text-align: center;
+}
+
 /* NAVS DE LAS OTRAS PÁGINAS */
 
   /* NS */
+
   .menu-ns {
     display: flex;
   }
+
   .menu-ns li {
     padding-left: 30px;
   }
+
   .menu-ns li a {
     display: inline-block;
     text-decoration: none;
@@ -30,6 +55,7 @@ body {
     position: relative;
     text-transform: uppercase;
   }
+
   .menu-ns li a::after {
     content: "";
     position: absolute;
@@ -40,17 +66,21 @@ body {
     background-color: #ffff;
     transition: 0.15s ease-in-out;
   }
+  
   .menu-ns li a:hover:after {
   width: 100%;
   }
 
   /* CONTACTO */
+
   .menu-con {
     display: flex;
   }
+
   .menu-con li {
     padding-left: 30px;
   }
+
   .menu-con li a {
     display: inline-block;
     text-decoration: none;
@@ -60,6 +90,7 @@ body {
     position: relative;
     text-transform: uppercase;
   }
+
   .menu-con li a::after {
     content: "";
     position: absolute;
@@ -70,17 +101,21 @@ body {
     background-color: #ffff;
     transition: 0.15s ease-in-out;
   }
+
   .menu-con li a:hover:after {
   width: 100%;
   }
 
   /* PF */
+
   .menu-pf {
     display: flex;
   }
+
   .menu-pf li {
     padding-left: 30px;
   }
+
   .menu-pf li a {
     display: inline-block;
     text-decoration: none;
@@ -90,6 +125,7 @@ body {
     position: relative;
     text-transform: uppercase;
   }
+
   .menu-pf li a::after {
     content: "";
     position: absolute;
@@ -100,91 +136,105 @@ body {
     background-color: #ffff;
     transition: 0.15s ease-in-out;
   }
+
   .menu-pf li a:hover:after {
   width: 100%;
   }
 
 /* FIN DEL NUEVO NAV */
 
-.galeria-port{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* max-width: 1000px; */
-    margin: 0;
+/* WEA DE NS */
+
+.titulo-pasos {
+  padding-top: 50px;
+  color: rgba(92 115 169);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.galeria-port-ns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0;
 }
 
 .servicio {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    margin: 10px auto;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin: 10px auto;
+  box-sizing: border-box;
 }
 
-.imagen-port{
-    width: 70%;
-    margin: 10px auto;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+.imagen-port-ns{
+  width: 100%;
+  width: 245px;
+  margin: 10px auto;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
-.imagen-port > img{
-    width: 100%;
-    object-fit: cover;
-    display: block;
+.imagen-port-ns > img{
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform: scale(0);
-    top: 0;
-    background: rgba(38, 152, 180, 0.555);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.hover-galeria-ns{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  top: 0;
+  background: rgba(112, 103, 187, 0.555);
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hover-galeria img{
-    width: 50px;
+.hover-galeria-ns img{
+  width: 50px;
 }
 
-.hover-galeria p{
-    color: #ffff;
+.hover-galeria-ns p{
+  color: #ffff;
 }
 
-.imagen-port:hover .hover-galeria{
-    transform: scale(1);
+.imagen-port-ns:hover .hover-galeria-ns{
+  transform: scale(1);
 }   
 
-.nombres{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    color: rgba(38, 152, 180);
-    width: 100%; 
+.nombre-servicio{
+  font-size: 21px;
+  font-weight: 410;
+  color: rgb(31, 23, 109);
 }
-
-/* WEA DE NS */
 
 .caja {
     background-color: rgb(127, 103, 170);
-    padding: 20px;
     border: 2px solid rgb(127, 103, 170);
     border-radius: 8px;
     width: 300px;
+    height: 50px;
     margin: 50px auto;
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
   }
 
 .caja p {
     color: #fff;
     margin: 0;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
   }
 
@@ -193,11 +243,13 @@ body {
     align-items: center;
     height: 70px;
     text-align: center;
+    padding-bottom: 120px;
 }
 
 .proceso h1{
-    font-size: 30px;
+    font-size: 33px;
     color: rgba(20, 50, 121, 0.897);
+    font-weight: 375;
 }
 
 
@@ -293,7 +345,10 @@ body {
     transition: background-color 0.3s ease;
   }  
   
-  
+.space{
+  padding-bottom: 20px;
+}  
+
 .mail-option{
     width: 600px;
     padding: 20px;
@@ -350,7 +405,7 @@ body {
   
   .submitbutton {
     padding: 10px;
-    background-color: rgb(38, 152, 180);
+    background-color: rgb(112, 103, 187);
     color: white;
     border: none;
     border-radius: 9px;
@@ -360,7 +415,7 @@ body {
   }
   
   .submitbutton:hover {
-    background-color: rgb(27, 108, 201);
+    background-color: rgb(81, 86, 155);
   }
 
   .boton-mail{
@@ -404,17 +459,29 @@ body {
 /* PF ESTILAZO */
   
 .pf-minimal{
-  display: flex;
+  display: block;
   max-width: 100%;
-  width: 300px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.boton-pf{
+.pr-res{
+  padding-bottom: 22px;
+}
+
+/* BOTÓN NS */
+
+.boton-ns{
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitbutton-ns{
   padding: 10px;
-  background-color: rgb(38, 152, 180);
+  background-color: rgb(112, 103, 187);
   color: white;
   border: none;
   border-radius: 9px;
@@ -424,10 +491,13 @@ body {
   height: 50px;
 }
 
-.boton-pf p{
-  font-size: 20px;
+.submitbutton-ns p{
+  font-size: 18px;
 }
 
+.submitbutton-ns:hover {
+  background-color: rgb(81, 86, 155);
+}
 
 
 
@@ -480,9 +550,17 @@ body {
     .msgcontacto p{
       font-size: 25px;
     }
+    
+    .galeria-port-ns {
+      flex-wrap: wrap;
+  }
+
+  .imagen-port-ns {
+      width: 100%;
+      max-width: 200px;
+  }
+
 }
-
-
 
 @media(max-width: 610px){
   .menu-ns, .menu-con, .menu-pf{
@@ -546,8 +624,6 @@ body {
       font-size: 13px;
     }
 }
-
-
 
 @media screen and (max-width: 350px){
   .proceso h1{

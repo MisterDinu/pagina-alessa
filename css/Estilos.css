@@ -16,22 +16,10 @@ body{
     overflow: hidden;
 }
 
-.recomendaciones{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    border-radius: 8px;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-}
 
 .titulo{
     color: rgba(92 115 169);
-    font-size: 45px;
+    font-size: 55px;
     text-align: center;
     margin-bottom: 45px;
 }
@@ -92,19 +80,17 @@ header{
     position: sticky;
 }
 
-
-
 .cont{
     background: #373B44;  
     background: #6441A5; 
     background: -webkit-linear-gradient(to right, rgba(108, 116, 228, 0.644),
     rgba(109, 103, 163, 0.692));
     background: linear-gradient(to right, rgba(108, 116, 228, 0.644),
-    rgba(109, 103, 163, 0.692)), url(../img/otherwoman.jpg);
+    rgba(109, 103, 163, 0.692)), url(../img/contacto-f.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: sticky;
-    background-position: center -320px;
+    background-position: center -380px;
     background-repeat: no-repeat;
 }
 
@@ -153,11 +139,13 @@ header{
     list-style: none;
     position: relative;
     background-color: var(--color2);
-    padding: 12px 20px;
+    padding-top: 15px;
+    padding-right: 45px;
+    padding-left: 30px;
 }
 
   .logo img {
-  width: 60px;
+  width: 150px;
 }
   .menu {
     display: flex;
@@ -260,6 +248,8 @@ header{
 
 /* FIN BOTON VOLVER AL INICIO */
 
+/* HEADER (s) */
+
 header .textos-header{
     display: flex;
     height: 430px;
@@ -290,11 +280,8 @@ header .textos-header{
 
 .pf, .ns, .cost, .cont{
     display: flex;
-    height: 380px;
+    height: 410px;
     width: 100%;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* padding-top: 50px; */
     padding-bottom: 300px;
     flex-direction: column;
     text-align: center;
@@ -320,45 +307,53 @@ header .textos-header{
 
 /* Nuestro servicio*/
 
-.contenedor-servicios{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 0;
-}
+
 
 .imagen-servicios{
     padding-top: 40px;
     padding-right: 35px;
-    width: 60%;
-    height: 60%;
     border-radius: 5%;
+    width: 220px;
 }
 
-.contenedor-servicios .contenido-textos{
-    width: 48%;
+.imagen-servicios2{
+    padding-top: 40px;
+    padding-left: 35px;
+    border-radius: 5%;
+    width: 220px;
 }
+
+.item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
 
 .contenido-textos h3{
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    padding-bottom: 10px;
 }
 
 .contenido-textos h3 span{
     background:rgb(58, 87, 155);
     color: #ffff;
     border-radius: 50%;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-bottom: 2px;
     text-align: center;
     width: 30px;
     height: 30px;
-    /* padding: 2px; */
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right: 5px;
+    margin-right: 7px;
 }
 
 .contenido-textos p{
-    padding: 0px 0px 30px 15px;
-    font-weight: 600;
+    padding: 0px 0px 30px 0px;
+    font-weight: 480;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -395,13 +390,13 @@ header .textos-header{
 .equipo {
     background: #f2f2f2;
     display: flex;
-    justify-content: center; /* Añadido para centrar horizontalmente */
+    justify-content: center;
     align-items: center;
 }
 
 .galeria-port{
     display: flex;
-    justify-content: center; /* Añadido para centrar horizontalmente */
+    justify-content: center;
     align-items: center;
     max-width: 1000px;
     margin: 0;
@@ -409,14 +404,14 @@ header .textos-header{
 
 .psicologo {
     display: flex;
-    flex-direction: column; /* Mostrar los elementos en una columna vertical */
+    flex-direction: column;
     align-items: center;
     margin: 10px auto;
 }
 
 .imagen-port{
     width: 70%;
-    margin: 10px auto; /* Cambiado el margin para centrar verticalmente y horizontalmente */
+    margin: 10px auto;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -582,48 +577,19 @@ footer{
         justify-content: center;
         text-align: center;
     }
-
-    .cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards .card{
-        width: 60%;
-    }
-
-    .cards2{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards2 .card{
-        width: 60%;
-    }
-    
-
-    .cards .card:first-child{
-        margin-bottom: 30px;
-    }
-
-    .cards2 .card:first-child{
-        margin-bottom: 30px;
-    }
     
     .galeria-port {
         flex-wrap: wrap;
     }
 
     .imagen-port {
-        width: 100%; /* Cambiar el tamaño para mostrar dos imágenes por fila */
+        width: 100%;
         max-width: 200px;
     }
 
 
     .nombres .nombre {
-        font-size: 18px; /* Ajustar el tamaño de fuente de los nombres */
+        font-size: 18px;
     }
 
     .box{
@@ -637,7 +603,6 @@ footer{
 
 } 
 
-/* Segunda responsive */
 @media screen and (max-width: 913px){
     .textos-header h1{
         font-size: 45px;
@@ -647,10 +612,6 @@ footer{
         font-size: 40px;
     }
 }
-
-
-
-/* Tercera responsive */
 
 @media screen and (max-width: 768px) {
     header .textos-header {
@@ -687,39 +648,27 @@ footer{
 
 
     .galeria-port {
-        flex-direction: row; /* Mostrar los elementos en una columna */
-        align-items: center; /* Alinear al centro */
+        flex-direction: row;
+        align-items: center; 
     }
 
     .imagen-port {
-        width: 60%; /* Ajustar el ancho de las imágenes */
-        max-width: 300px; /* Establecer un ancho máximo para las imágenes */
+        width: 60%; 
+        max-width: 300px; 
     }
 
     .nombres {
-        flex-direction: column; /* Mostrar los nombres de los psicólogos en una columna */
-        align-items: center; /* Alinear al centro */
+        flex-direction: column;
+        align-items: center;
     }
 
     .nombres .nombre {
-        font-size: 16px; /* Reducir el tamaño de fuente de los nombres */
-    }
-
-    .cards,
-    .cards2 {
-        flex-direction: column; /* Mostrar las tarjetas de testimonios en una columna */
-        align-items: center; /* Alinear al centro */
-    }
-
-    .cards .card,
-    .cards2 .card {
-        width: 80%; /* Ajustar el ancho de las tarjetas */
-        margin-bottom: 30px; /* Añadir margen inferior para separar las tarjetas */
+        font-size: 16px; 
     }
 
 
     .footer {
-        padding-bottom: 20px; /* Reducir el espacio inferior del footer */
+        padding-bottom: 20px; 
     }
 
     /* lo mio  */
@@ -757,8 +706,6 @@ footer{
         font-size: 32px;
     }
 }
-
-/* Cuarta responsive */
 
 @media screen and (max-width: 545px) {
     .textos-header h1{
@@ -830,21 +777,9 @@ footer{
         width: 85px;
         padding-right: 30px;
     }
-    .cont {
-        background-attachment: scroll;
-        background-position: center;
-    }
   }  
 
-/* Quinta responsive */
-
-
 @media screen and (max-width: 455px) {
-    
-    
-    .contenido-texto-card {
-        font-size: 13px;
-    }
     
     .imagen-servicios {
         max-width: 100%;
@@ -899,23 +834,6 @@ footer{
         width: 48%;
         max-width: 200px;
     }
-
-    .card .contenido-texto-card{
-        padding-left: 10px;
-    }
-
-    .cards .card img{
-        display: flex;
-        width: 25%;
-        height: 34%;
-    }
-
-    .cards2 .card img{
-        display: flex;
-        width: 25%;
-        height: 34%;
-    }
-
     .hover-galeria img{
         width: 80px;
     }
