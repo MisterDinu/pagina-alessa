@@ -144,18 +144,18 @@ header{
     padding-left: 30px;
 }
 
-  .logo img {
+.logo img {
   width: 150px;
 }
-  .menu {
+.menu {
     display: flex;
   }
 
-  .menu li {
+.menu li {
     padding-left: 30px;
   }
 
-  .menu li a {
+.menu li a {
     display: inline-block;
     text-decoration: none;
     color: #ffff;
@@ -164,7 +164,8 @@ header{
     position: relative;
     text-transform: uppercase;
 }
-    .menu li a::after {
+
+.menu li a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -174,27 +175,33 @@ header{
     background-color: #ffff;
     transition: 0.15s ease-in-out;
 }
-    .menu li a:hover:after {
+
+.menu li a:hover:after {
   width: 100%;
 }
-    .open-menu , .close-menu {
+
+.open-menu , .close-menu {
     position: absolute;
     color: #f2f2f2;
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
 }
-    .open-menu {
+
+.open-menu {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
 }
-    .close-menu {
+
+.close-menu {
     top: 20px;
     right: 20px;
 }
-    #check {display: none;}
 
+#check {
+    display: none;
+}
 
 @media(max-width: 610px){
     .menu {
@@ -262,17 +269,26 @@ header .textos-header{
     text-align: center;
 }
 
+.texto-psi{
+    padding-top: 35px;
+    font-size: 50px;
+    color: #ffff;
+}
+
 .texto-ns{
+    padding-top: 35px;
     font-size: 50px;
     color: #ffff;
 }
 
 .texto-pf{
+    padding-top: 35px;
     font-size: 50px;
     color: #ffff;
 }
 
 .texto-con{
+    padding-top: 35px;
     font-size: 50px;
     color: #ffff;
 }
@@ -312,7 +328,7 @@ header .textos-header{
 .imagen-servicios{
     padding-top: 40px;
     padding-right: 35px;
-    border-radius: 5%;
+    border-radius: 10%;
     width: 220px;
 }
 
@@ -372,13 +388,20 @@ header .textos-header{
     top: -2px;
 }
 
-.contenido-costos img{
+.contenido-costos{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 550px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 auto;
     object-fit: contain;
-    display: block;
-    border-radius: 5%;
+    display: flex;
+}
+
+.contenido-costos img{
+    border-radius: 7%;
+
 }
 
 .textos-costos {
@@ -519,6 +542,14 @@ footer{
 }
 
 
+.box{
+    width: 900px;
+}
+
+.box.test{
+    width: 500px;
+}
+
 /* Para responsive mode */
 
 @media screen and (max-width:1400px){
@@ -537,7 +568,7 @@ footer{
     }
     
     .box{
-        width: 350px;
+        width: 700px;
     }
 
 }
@@ -558,11 +589,6 @@ footer{
     .contenedor-servicios .contenido-textos{
         width: 80%;
     }
-
-    .imagen-servicios{
-        width: 70%;
-        padding-bottom: 30px;
-    }
    
     .contenedor-costos {
         flex-direction: column;
@@ -576,6 +602,10 @@ footer{
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .contenido-costos{
+        width: 100%;
     }
     
     .galeria-port {
@@ -592,9 +622,9 @@ footer{
         font-size: 18px;
     }
 
-    .box{
-        width: 270px;
-        height: 440px;
+    .box.test{
+        width: 400px;
+        height: 350px;
     }
 
     #box3, #box4{
@@ -611,21 +641,41 @@ footer{
     .textos-header h2{
         font-size: 40px;
     }
+
+    .box.test{
+        width: 420px;
+    }
+
+    .contenido-costos {
+        display: flex;
+        width: 100%; 
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto; 
+    }
 }
 
 @media screen and (max-width: 768px) {
+
+    .pf {
+        background-position: center -130px;
+        background-attachment: fixed;
+    }
+    
     header .textos-header {
         padding-bottom: 130px;
     }
 
-    .contenedor-servicios {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .imagen-servicios {
-        width: 90%;
+        width: 170px;
+    }
+
+    
+    .imagen-servicios2 {
+        width: 170px;
     }
 
     .contenido-costos {
@@ -712,6 +762,15 @@ footer{
         font-size: 40px;
     }
 
+    .contenido-textos h3{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .contenido-textos p{
+        font-size: 15px;
+    }
+
     .contenido-costos{
         width: 90%;
     }
@@ -722,10 +781,6 @@ footer{
 
     .contenido-costos h4 {
         font-size: 13px;
-    }
-
-    .imagen-servicios {
-      width: 100%;
     }
   
     .contenedor-costos .contenido-costos {
@@ -780,9 +835,8 @@ footer{
   }  
 
 @media screen and (max-width: 455px) {
-    
-    .imagen-servicios {
-        max-width: 100%;
+    .logo {
+        width: 120px;
     }
 
     .contenido-costos img {
@@ -836,5 +890,20 @@ footer{
     }
     .hover-galeria img{
         width: 80px;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    .contenido-textos p{
+        font-size: 14px;
+    }
+
+    .imagen-servicios {
+        width: 150px;
+    }
+
+    .imagen-servicios2 {
+        width: 150px;
     }
 }
