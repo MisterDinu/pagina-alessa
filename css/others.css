@@ -166,7 +166,6 @@ body {
   font-size: 54px;
   text-align: center;
   margin-bottom: 45px;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .galeria-port-ns{
@@ -263,6 +262,7 @@ body {
 }
 
 .proceso h1{
+    padding-bottom: 15px;
     font-size: 37px;
     color: rgb(31, 23, 109);
     font-weight: 315;
@@ -287,6 +287,7 @@ body {
     width: 400px;
     height: 250px;
     background-color: rgb(139, 130, 221);
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,7 +297,21 @@ body {
     transform: translateY(150px);
     opacity: 0;
     color: #f2f2f2;
-    padding-left: 20px;
+
+  }
+
+.paso h2{
+  font-size: 32px;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+.paso p{
+  padding-right: 25px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
 }
 
 .paso.active {
@@ -306,13 +321,38 @@ body {
 }
 
 .paso:nth-child(odd) {
-    margin-right: auto; /* Alinea a la izquierda en pasos impares */
+    margin-right: auto;
     margin-left: 0;
 }
 
 .paso:nth-child(even) {
-    margin-left: auto; /* Alinea a la derecha en pasos pares */
+    margin-left: auto;
     margin-right: 0;
+}
+
+.modal-contenido h2{
+  padding-bottom: 13px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.modal-contenido p{
+  padding-right: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.col-par{
+  font-size: 16px;
+  display: flex;
+  font-weight: 300;
+}
+
+.f-par{
+  padding-top: 12px;
+  padding-left: 20px;
+  list-style: circle inside;
 }
 
 .nsfoot{
@@ -684,6 +724,15 @@ padding-left: 20px;
 }
 
 @media screen and (max-width: 912px) {
+
+.proceso{
+  padding-bottom: 160px;
+}
+
+.proceso h1{
+  font-size: 30px;
+}
+
   .texto-psi{
     font-size: 39px;
   }
@@ -813,9 +862,7 @@ padding-left: 20px;
 }
 
 @media screen and (max-width: 567px){
-    .proceso{
-        padding-bottom: 160px;
-    }
+
     
     .caja {
       width: 260px;

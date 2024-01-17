@@ -566,11 +566,10 @@ footer{
         justify-content: center;
         box-sizing: border-box;
     }
-    
+
     .box{
         width: 700px;
     }
-
 }
 
 
@@ -634,6 +633,11 @@ footer{
 } 
 
 @media screen and (max-width: 913px){
+    .cont{
+        background-attachment: scroll;
+        background-position: center;
+    }
+
     .textos-header h1{
         font-size: 45px;
     }
@@ -643,7 +647,7 @@ footer{
     }
 
     .box.test{
-        width: 420px;
+        width: 350px;
     }
 
     .contenido-costos {
