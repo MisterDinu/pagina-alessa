@@ -636,7 +636,7 @@ footer{
 } 
 
 @media screen and (max-width: 913px){
-    .cont, .pf, .ns{
+    .cont{
         background-attachment: scroll;
         background-position: center;
     }
