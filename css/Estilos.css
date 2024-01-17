@@ -115,7 +115,10 @@ header{
     background: linear-gradient(to right,rgba(29, 121, 226, 0.479),
     rgba(49, 138, 216, 0.548)), url(../img/preguntas-f.jpeg);
     background-position: center -130px;
-    background-attachment: local;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: sticky;
 }
 
 .ns{
@@ -633,7 +636,7 @@ footer{
 } 
 
 @media screen and (max-width: 913px){
-    .cont{
+    .cont, .pf, .ns{
         background-attachment: scroll;
         background-position: center;
     }
