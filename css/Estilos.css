@@ -769,6 +769,10 @@ footer{
         font-size: 40px;
     }
 
+    .container{
+        text-align: center;
+    }
+
     .contenido-textos h3{
         font-size: 20px;
         padding-bottom: 10px;

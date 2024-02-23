@@ -761,8 +761,22 @@ padding-left: 20px;
 
   .paso{
         width: 300px;
-        height: 188px;
+        height: 200px;
   }
+
+  
+  .paso h2{
+    font-size: 25px;
+}
+
+  .paso p{
+    font-size: 19px;
+}
+
+#paso1 {
+  width: 300px;
+  height: 240px;
+}
 
   .contact-section {
     max-width: 100%;

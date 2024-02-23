@@ -5,7 +5,8 @@ use PHPMailer\PHPMailer\Exception;
 // Importar clases de PHPMailer
 require 'vendor/autoload.php';
 
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST"){
@@ -19,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
     try {
         //Server settings
-        $mail->SMTPDebug = 2;
+        $mail->SMTPDebug = 0;
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -39,7 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
         $mail->send();
 
-        header('Location: ../exito.html');
+        echo '<script>window.location.href = "../exito.html";</script>';
+        exit();
 
         } catch (Exception $e) {
         // Manejar errores en el envío del correo
@@ -52,3 +54,4 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 }
 
 ?>
+
