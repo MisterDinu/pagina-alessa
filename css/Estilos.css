@@ -782,6 +782,11 @@ footer{
     .texto-con{
         font-size: 32px;
     }
+
+    #btnArriba, #btnSeguimiento{
+        width: 75px;
+        padding-right: 10px;
+    }
 }
 
 @media screen and (max-width: 545px) {
@@ -859,7 +864,7 @@ footer{
     .titulo-final{
         font-size: 16px;
     }
-    #btnArriba {
+    #btnArriba, #btnSeguimiento {
         width: 85px;
         padding-right: 30px;
     }
