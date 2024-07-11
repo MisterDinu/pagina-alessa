@@ -9,6 +9,22 @@
         gtag('js', new Date());
         gtag('config', 'AW-10974720556');
     </script>
+    <!-- Event snippet for Whatsapp conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+              'send_to': 'AW-10974720556/N5flCKPezo4ZEKzkk_Eo',
+              'event_callback': callback
+          });
+          return false; 
+        }
+    </script>
     <!--  Se combina estilado css con el framework Bulma.io -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +66,11 @@
         <button id="btnArriba" class="fadeIn" onclick="volverArriba()">
             <img src="img/volver 2.png" alt="">
         </button>
-
+        <button id="btnSeguimiento" class="fadeIn">
+            <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0" onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
+                <img src="img/Whats logo.png" alt="">
+            </a>
+        </button>
         <!-- SERVICIOS -->
 
         <section class="contenedor servicios section">
@@ -101,7 +121,7 @@
                     </div>
                     <br>
                     <div class="buttons has-addons is-centered">
-                        <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión" target="_blank">
+                        <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión" onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
                             <button class="button is-medium has-background-info-dark is-rounded">
                                 <p class="subtitle has-text-white">¡Agenda tu sesión aquí!</p>
                             </button>
@@ -162,30 +182,29 @@
                 <!-- Lorena -->
                     <div class="column is-one-third">
                         <iframe class="box test has-background-white-ter" id="box1" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/loren.pack.5/posts/pfbid032DvNkcvFDPozdYmq8YXnDjojMTEC7ukoBVKxh6QNTv9fuxUtEMvn54U6CauXtzqwl&amp;width=100" 
-                        width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                <!-- Espacio entre divs -->
-                    <div class="column is-one-fifth"></div>
-                <!-- Kary -->
-                    <div class="column is-one-third">
-                        <iframe class="box test has-background-white-ter" id="box2" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/karyrfabila/posts/pfbid04DuaGwivtGLinWMZ72SYAp951Tu7UW7BMmBhWuzQcjZRYK6QwqVFEJmKYBsZ5ZJfl&amp;width=100" 
-                        width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                </div>
-                <div class="columns">
-                <!-- Alma -->
-                    <div class="column is-one-third">
-                        <iframe class="box test has-background-white-ter" id="box3" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/almagabriela.vargasalbarran/posts/pfbid02PkCMiyv6niTGVahTzyP5VFGbGFG7WNmVsC8PhYipbAZZ4gM3rxzyP8javsToccSAl&amp;width=100" 
-                        width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 <!-- Espacio entre divs -->
                     <div class="column is-one-fifth"></div>
                 <!-- Circe -->
                     <div class="column is-one-third">
-                        <iframe class="box test has-background-white-ter" id="box4" src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/fabiolacir/posts/pfbid036uxyvsoSpZ7HeBVkGJjbnvn5AZ9KGXW3YcawrcXAsX49U7qq79kgKdMzeS6nN8dSl&amp;width=100" 
-                        width="450" height="299" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe class="box test has-background-white-ter" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffabiolacir%2Fposts%2Fpfbid036dGeHieurMYQSZ3RaxLfKjq94u1tz8bnEwuwbjZ8vrxnLxXr2TL8nPUmf2ewCyKal&show_text=true&width=455" 
+                        width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
-                </div>    
+                    <div class="fb-page" data-href="https://www.facebook.com/fabiolacir/posts/pfbid036oRearvefsfBmn5yNRQmocGxQT7bbCBeMVS5tJm9H3AWpxmfipbi5xVr8Z2dBY9Dl?rdid=qUhGpk54ynXSdD17" data-tabs="timeline" data-width="450" data-height="299" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <iframe class="box test has-background-white-ter" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcatito.valenciano%2Fposts%2Fpfbid0K3d4CxggExCgqsHF1m6N1ieFAwBjLvJCNwaL4rK8WfJYgrg7k39iBL49wiLxCYSHl&show_text=true&width=500" 
+                        width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                <!-- Espacio entre divs -->
+                    <div class="column is-one-fifth"></div>
+                    <div class="column is-one-third">
+                        <iframe class="box test has-background-white-ter" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fire.nos.3%2Fposts%2Fpfbid0EPKvL85Ngd6wQxcnjkA9DVE66wQcLHuGYqoR5b7PUeinE85rHfPqTMtMNXFdugfxl&show_text=true&width=500" 
+                        width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     </Main>

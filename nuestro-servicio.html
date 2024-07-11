@@ -9,6 +9,22 @@
         gtag('js', new Date());
         gtag('config', 'AW-10974720556');
     </script>
+    <!-- Event snippet for Whatsapp conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-10974720556/N5flCKPezo4ZEKzkk_Eo',
+            'event_callback': callback
+        });
+        return false; 
+      }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestro Servicio</title>
@@ -50,6 +66,11 @@
     <button id="btnArriba" class="fadeIn" onclick="volverArriba()">
       <img src="img/volver 2.png" alt="">
     </button>
+    <button id="btnSeguimiento" class="fadeIn">
+      <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0" onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
+          <img src="img/Whats logo.png" alt="">
+      </a>
+  </button>
     <!-- MEJORAR LA BOX Y HACERLO BONITO -->
     <section class="serv">
       <div class="proceso">
@@ -181,8 +202,9 @@
 
         <!-- PONER BOTÓN MÁS BONITO -->
 
+        
       <div class="boton-ns">
-        <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión" target="_blank">
+        <a href="https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión" target="_blank" onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
         <button class="submitbutton-ns"><p>¡Agenda tu sesión aquí!</p></button>
         </a>
       </div>

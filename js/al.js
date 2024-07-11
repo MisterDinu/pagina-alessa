@@ -12,6 +12,15 @@ function mostrarBoton() {
     } else {
         botonArriba.style.display = "none";
     }
+
+    var botonWa = document.getElementById("btnSeguimiento");
+
+// Se muestra el botón cuando el usuario ha bajado 300px
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        botonWa.style.display = "block";
+    } else {
+        botonWa.style.display = "none";
+    }
 }
 
 // Función para ocultar el botón
@@ -51,4 +60,14 @@ function reveal(){
             reveals[i].classList.remove('active');
         }
     }
+}
+
+
+// PARA ERROR DE TARGET BLANK EN BOTÓN DE WHATSAPP
+
+function agendarSesion() {
+    event.preventDefault();
+    var url = "https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión";
+    gtag_report_conversion(url);
+    window.open(url, "_blank");
 }

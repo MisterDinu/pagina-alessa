@@ -206,6 +206,9 @@ header{
     display: none;
 }
 
+
+/* ALGO DEL MENU */
+
 @media(max-width: 610px){
     .menu {
         flex-direction: column;
@@ -246,6 +249,24 @@ header{
     z-index: 1;
 }
 
+/* BOTÓN WHATS */
+
+#btnSeguimiento {
+    position: fixed;
+    display: none;
+    top: 80%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    animation: fadeIn 0.5s ease-in-out;
+    cursor: pointer;
+    width: 95px;
+    padding-right: 20px;
+    z-index: 2;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -254,7 +275,6 @@ header{
         opacity: 1;
     }
 }
-
 
 /* FIN BOTON VOLVER AL INICIO */
 
