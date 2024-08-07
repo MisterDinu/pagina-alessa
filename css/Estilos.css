@@ -570,12 +570,12 @@ header .textos-header{
 }
 
 .wrapper i:first-child {
-    left: 200px;    
+    left: 100px;    
     transform: translateY(250px);
 }
 
 .wrapper i:last-child {
-    right: 200px;
+    right: 100px;
     transform: translateY(-240px);
 }
 

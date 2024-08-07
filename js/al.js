@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const startDragging = (e) => {
             isDragging = true;
-            startX = e.pageX - carrete.offsetLeft;
+            startX = (e.pageX || e.touches[0].pageX) - carrete.offsetLeft;
             scrollLeft = carrete.scrollLeft;
         };
 
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const dragging = (e) => {
             if (!isDragging) return;
             e.preventDefault();
-            const x = e.pageX - carrete.offsetLeft;
+            const x = (e.pageX || e.touches[0].pageX) - carrete.offsetLeft;
             const walk = (x - startX) * 2; // La cantidad de desplazamiento
             carrete.scrollLeft = scrollLeft - walk;
         };
@@ -107,10 +107,15 @@ document.addEventListener("DOMContentLoaded", () => {
         carrete.addEventListener("mousemove", dragging);
 
 
-        carrete.addEventListener("touchstart", dragging);
-        carrete.addEventListener("touchend", stopDragging);
-        carrete.addEventListener("touchmove", dragging);
-
+        carrete.addEventListener("touchstart", (e) => {
+            startDragging(e);
+        });
+        carrete.addEventListener("touchend", (e) => {
+            stopDragging(e);
+        });
+        carrete.addEventListener("touchmove", (e) => {
+            dragging(e);
+        });
 
     } else {
         console.error("No se encontró el elemento .carrete");
@@ -119,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollRightBtn = document.getElementById("scroll-right");
 
     // Define la cantidad de desplazamiento en píxeles
-    const scrollAmount = 200;
+    const scrollAmount = 79;
 
     // Función para desplazar hacia la izquierda
     scrollLeftBtn.addEventListener("click", () => {
