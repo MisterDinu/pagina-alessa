@@ -231,7 +231,9 @@ header{
 
 /* FIN DE NUEVO NAV */
 
-/* BOTON VOLVER AL INICIO */
+
+
+/* BOTONES */
 
 #btnArriba {
     display: none;
@@ -245,11 +247,27 @@ header{
     animation: fadeIn 0.5s ease-in-out;
     cursor: pointer;
     width: 100px;
+    height: 100px;
     padding-right: 20px;
-    z-index: 1;
+    z-index: 200;
 }
 
-/* BOTÓN WHATS */
+#btnPsic{
+    position: fixed;
+    display: block;
+    top: 90%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    animation: fadeIn 0.5s ease-in-out;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    padding-right: 20px;
+    z-index: 200;
+}
 
 #btnSeguimiento {
     position: fixed;
@@ -262,9 +280,10 @@ header{
     background-color: transparent;
     animation: fadeIn 0.5s ease-in-out;
     cursor: pointer;
-    width: 95px;
+    width: 100px;
+    height: 100px;
     padding-right: 20px;
-    z-index: 2;
+    z-index: 200;
 }
 
 @keyframes fadeIn {
@@ -431,7 +450,7 @@ header .textos-header{
     color: white;
 }
 
-/* Galeria */
+/* EQUIPO */
 
 .equipo {
     background: #f2f2f2;
@@ -474,9 +493,9 @@ header .textos-header{
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: scale(0);
+    transform: translateX(1);
     top: 0;
-    background: rgba(38, 152, 180, 0.555);
+    background: rgba(34, 137, 163, 0.349);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -485,15 +504,32 @@ header .textos-header{
 }
 
 .hover-galeria img{
-    width: 50px;
+    position: absolute;
+    width: 68px;
+    top: 116px;
+}
+
+.hover-galeria h3{
+    color: #ffff;
+    font-size: 15px;
+    position: absolute;
+    bottom: 145px;
 }
 
 .hover-galeria p{
+    position: absolute;
+    top: 278px;
     color: #ffff;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hover-galeria .jimbo{
+    top: 108px;
 }
 
 .imagen-port:hover .hover-galeria{
-    transform: scale(1);
+    transform: translateX(100%);
 }   
 
 .nombres{
@@ -512,6 +548,87 @@ header .textos-header{
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    
+}
+
+.wrapper i{
+    height: 50px;
+    width: 50px;
+    background: rgba(31, 142, 170, 0.788);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    /* transform: translateY(-150px); */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+}
+
+.wrapper i:first-child {
+    left: 200px;    
+    transform: translateY(250px);
+}
+
+.wrapper i:last-child {
+    right: 200px;
+    transform: translateY(-240px);
+}
+
+.wrapper .carrete{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2));
+    gap: 16px;
+    overflow: hidden;
+}
+
+.carrete .testo{
+    list-style: none;
+    /* background: #f2f2f2; */
+    border-radius: 8px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.testo .tes{
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1180px){
+    .wrapper .carrete{
+        grid-auto-columns: 70%;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .wrapper i:first-child {
+        left: 20px;    
+        transform: translateY(250px);
+    }
+    
+    .wrapper i:last-child {
+        right: 20px;
+        transform: translateY(-250px);
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .testo .tes{
+        width: 350px;
+        height: 500px;
+    }
 }
 
 .recomendaciones{
@@ -653,6 +770,20 @@ footer{
         height: 350px;
     }
 
+
+    .hover-galeria img{
+        top: 107px;
+    }
+    
+    .hover-galeria h3{
+        bottom: 98px;
+    }
+    
+    .hover-galeria p{
+        top: 245px;
+        font-size: 30px;
+    }
+
 } 
 
 @media screen and (max-width: 913px){
@@ -682,6 +813,11 @@ footer{
         justify-content: center;
         margin: 0 auto; 
     }
+
+    .wrapper .carrete{
+        grid-auto-columns: 100%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -750,15 +886,6 @@ footer{
 
     /* lo mio  */
 
-    nav, .navns {
-        text-align: center;
-        padding: 30px 0 0 0;
-    }
-
-    nav > a{
-        margin-right: 5px;
-    }
-
     .textos-header h1{
         font-size: 35px;
     }
@@ -786,6 +913,23 @@ footer{
     #btnArriba, #btnSeguimiento{
         width: 75px;
         padding-right: 10px;
+    }
+
+    .hover-galeria img{
+        top: 90px;
+    }
+    
+    .hover-galeria h3{
+        bottom: 90px;
+    }
+    
+    .hover-galeria .jimbo{
+        top: 90px;
+    }
+    
+    .hover-galeria p{
+        top: 220px;
+        font-size: 30px;
     }
 }
 
@@ -868,6 +1012,24 @@ footer{
         width: 85px;
         padding-right: 30px;
     }
+    
+    .hover-galeria img{
+        top: 90px;
+    }
+    
+    .hover-galeria h3{
+        bottom: 118px;
+    }
+    
+    .hover-galeria .jimbo{
+        top: 90px;
+    }
+    
+    .hover-galeria p{
+        top: 248px;
+        font-size: 30px;
+    }
+    
   }  
 
 @media screen and (max-width: 455px) {
@@ -924,9 +1086,48 @@ footer{
         width: 48%;
         max-width: 200px;
     }
-    .hover-galeria img{
+
+    .hover-galeria {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0; /* Elimina el espacio entre los elementos */
+        padding: 0; /* Elimina el padding del contenedor */
+        margin: 0; /* Elimina el margen del contenedor */
+    }
+    
+    .hover-galeria img,
+    .hover-galeria h3,
+    .hover-galeria .jimbo,
+    .hover-galeria p {
+        position: absolute;
+        margin: 0; /* Elimina el margen de cada elemento */
+        padding: 0; /* Elimina el padding de cada elemento */
+    }
+    
+    .hover-galeria img {
+        top: 60px;
         width: 80px;
     }
+    
+    .hover-galeria h3{
+        top: 10px;
+    }
+    
+    .hover-galeria .jimbo{
+        top: 60px;
+    }
+    
+    .hover-galeria p{
+        top: 170px;
+        font-size: 24px;
+    }
+    
 }
 
 @media screen and (max-width: 390px){

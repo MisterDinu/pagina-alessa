@@ -9,6 +9,22 @@
             gtag('js', new Date());
             gtag('config', 'AW-10974720556');
         </script>
+        <!-- Event snippet for Whatsapp conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+        <script>
+            function gtag_report_conversion(url) {
+                var callback = function () {
+                    if (typeof(url) != 'undefined') {
+                        window.location = url;
+                    }
+                };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-10974720556/N5flCKPezo4ZEKzkk_Eo',
+                'event_callback': callback
+            });
+            return false; 
+            }
+        </script>
         <!--  Se combina estilado css con el framework Bulma.io -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +38,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+        <script src="../js/al.js"></script>
     </head>
 
     <body>
@@ -49,6 +66,12 @@
 <!-- Copiar formato de wordpress y agregar sección "Formación" que contenga institución academica que lo avala y cédula profesional -->
 
         <main>
+            <button id="btnPsic" class="fadeIn">
+                <a href="https://api.whatsapp.com/send/?phone=525636140438&text=¡Hola%21+Me+gustaría+agendar+una+sesión&type=phone_number&app_absent=0" onclick="gtag_report_conversion('https://wa.me/525636140438?text=¡Hola!%20Me%20gustaría%20agendar%20una%20sesión')">
+                    <img src="../img/Whats logo.png" alt="">
+                </a>
+            </button>
+
             <section class="psicologo-section">
                 <div class="foto-psicologo">
                     <img src="../img/Joel2.jpg" alt="Foto del Psicólogo">
