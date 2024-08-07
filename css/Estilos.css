@@ -1041,10 +1041,6 @@ footer{
         max-width: 100%;
     }
 
-    .imagen-port img {
-        width: 100%;
-    }
-
     .contenedor-servicios {
         display: flex;
         justify-content: space-evenly;
@@ -1076,7 +1072,7 @@ footer{
         padding-bottom: 15px;
     }
 
-    .galeria-port {
+    /* .galeria-port {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -1096,9 +1092,9 @@ footer{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 0; /* Elimina el espacio entre los elementos */
-        padding: 0; /* Elimina el padding del contenedor */
-        margin: 0; /* Elimina el margen del contenedor */
+        gap: 0; 
+        padding: 0; 
+        margin: 0; 
     }
     
     .hover-galeria img,
@@ -1106,8 +1102,8 @@ footer{
     .hover-galeria .jimbo,
     .hover-galeria p {
         position: absolute;
-        margin: 0; /* Elimina el margen de cada elemento */
-        padding: 0; /* Elimina el padding de cada elemento */
+        margin: 0; 
+        padding: 0; 
     }
     
     .hover-galeria img {
@@ -1127,7 +1123,7 @@ footer{
         top: 170px;
         font-size: 24px;
     }
-    
+     */
 }
 
 @media screen and (max-width: 390px){

@@ -105,6 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
         carrete.addEventListener("mouseleave", stopDragging);
         carrete.addEventListener("mouseup", stopDragging);
         carrete.addEventListener("mousemove", dragging);
+
+
+        carrete.addEventListener("touchstart", dragging);
+        carrete.addEventListener("touchend", stopDragging);
+        carrete.addEventListener("touchmove", dragging);
+
+
     } else {
         console.error("No se encontró el elemento .carrete");
     }
@@ -112,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollRightBtn = document.getElementById("scroll-right");
 
     // Define la cantidad de desplazamiento en píxeles
-    const scrollAmount = 300;
+    const scrollAmount = 200;
 
     // Función para desplazar hacia la izquierda
     scrollLeftBtn.addEventListener("click", () => {
