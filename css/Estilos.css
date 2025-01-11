@@ -423,6 +423,50 @@ header .textos-header{
 
 .contenedor-costos {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.columns {
+    margin-top: 20px;
+}
+
+.contenedor-costos > .box {
+    max-width: 800px; /* Ancho de la caja principal */
+    padding: 40px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las cajas internas (sesión individual y paquete) */
+.contenedor-costos .columns .box {
+    max-width: 250px; /* Ancho para las cajas internas */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.box p.title {
+    margin-bottom: 30px;
+}
+
+.contenido-costos {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.contenido-costos img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* .contenedor-costos {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
@@ -449,6 +493,21 @@ header .textos-header{
 .textos-costos {
     color: white;
 }
+
+.column.is-full {
+    margin-bottom: 15px;
+}
+
+.column.is-full:nth-child(3) {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.column.is-full:nth-child(3) p {
+    font-weight: bold;
+    color: #1e90ff;
+} */
 
 /* EQUIPO */
 
