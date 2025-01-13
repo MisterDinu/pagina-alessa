@@ -694,8 +694,41 @@ width: 100%;
 padding-left: 20px;
 }
 
+
 .answer.step li{
-  padding-bottom: 5px;
+  padding-bottom: 5px;  
+}
+
+.disc {
+  list-style-type: disc;
+}
+
+.answer.steps{
+  padding-left: 50px;
+  list-style: lower-alpha;
+  }
+
+
+/* BOTÓN REGRESAR A INICIO EN HTML TYC */
+
+.columns {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 100%;            /* Ocupa el 100% de la altura de la página */
+}
+
+/* El contenedor de los botones */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
+  align-items: center;     /* Centra el botón verticalmente */
+}
+
+/* Aseguramos que el botón tenga un buen estilo */
+button {
+  display: inline-block;
+  text-align: center;
 }
 
 /* BOTÓN NS */

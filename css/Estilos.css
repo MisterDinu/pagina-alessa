@@ -365,8 +365,6 @@ header .textos-header{
 
 /* Nuestro servicio*/
 
-
-
 .imagen-servicios{
     padding-top: 40px;
     padding-right: 35px;
@@ -433,15 +431,16 @@ header .textos-header{
 }
 
 .contenedor-costos > .box {
-    max-width: 800px; /* Ancho de la caja principal */
+    max-width: 800px; 
     padding: 40px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos para las cajas internas (sesión individual y paquete) */
+
 .contenedor-costos .columns .box {
-    max-width: 250px; /* Ancho para las cajas internas */
+    max-width: 250px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
