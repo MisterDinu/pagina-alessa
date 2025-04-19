@@ -1111,4 +1111,8 @@ footer{
   .submitbutton{
     max-width: 100%;
   }
+
+  .submit-on{
+    max-width: 100%;
+  }
 }
