@@ -352,6 +352,11 @@ width: 100%;
     text-align: center;
   }
 
+.serv{
+  background-color: #f2f2f2;
+  padding-bottom: 18px;
+}
+  
 .proceso{
     flex-direction: row;
     align-items: center;

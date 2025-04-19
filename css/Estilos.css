@@ -128,8 +128,23 @@ header{
     rgba(122, 114, 211, 0.646));
     background: linear-gradient(to right,rgba(84, 76, 156, 0.404),
     rgba(122, 114, 211, 0.646)), url(../img/nuestro-s.jpeg);
-    background-position: center -150px;
+    background-position: center -176px;
     background-attachment: local;
+}
+
+.head-online{
+    background: #373B44;  
+    background: #6441A5;
+    background: -webkit-linear-gradient(to right, rgba(33, 241, 120, 0.438),
+    rgba(18, 105, 31, 0.646));
+    background: linear-gradient(to right, rgba(43, 146, 211, 0.533),
+    rgba(31, 63, 178, 0.479)), url(../img/Terapia\ online.jpg);
+    background-position: center -220px;
+    background-attachment: local;
+    width: 100%;
+    background-size: cover;
+    background-attachment: local;
+    position: sticky;
 }
 
 /* NUEVO NAV */
@@ -335,8 +350,14 @@ header .textos-header{
     color: #ffff;
 }
 
+.titulo-online{
+    padding-top: 35px;
+    font-size: 50px;
+    color: #ffff;
+}
 
-.pf, .ns, .cost, .cont{
+
+.pf, .ns, .cost, .cont, .head-online{
     display: flex;
     height: 410px;
     width: 100%;
@@ -664,10 +685,243 @@ header .textos-header{
     pointer-events: none;
 }
 
+
+/* ONLINE */
+
+.texton {
+    background-color: #f0f8ff;
+    padding: 4rem 2rem;
+  }
+  
+  .texton-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .on-text {
+    flex: 1 1 400px;
+  }
+  
+  .on-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .on-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-primary{
+    display: inline-block;
+    background-color: #2b6bb5;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1a4678;
+    color: white;
+  }
+  
+
+  .on-image {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .on-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  /* Beneficios */
+  .benefits {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .benefit-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .card .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+/* PREGUNTAS FRECUENTES */
+.faq-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .faq-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+
+
+  .faq-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem; /* Más espacio entre tarjetas */
+    max-width: 900px; /* Aumenta el ancho total para permitir tarjetas más anchas */
+    margin: 0 auto;
+  }
+  
+  .faq-cards .card {
+    flex: 1 1 400px; /* Tarjetas más anchas */
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    text-align: left;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq-cards .card h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #2b6bb5;
+  }
+  
+  .faq-cards .card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+  /* Responsive */
+
+  @media (max-width: 768px) {
+    .faq-cards {
+      max-width: 100%;
+      gap: 2rem;
+    }
+  
+    .faq-cards .card {
+      flex: 1 1 100%;
+    }
+  }
+
+
+  /* CTA Final */
+  .cta {
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #f0f8ff,
+    #e6e6e6), url(../img/contacto-f.jpg);
+    text-align: center;
+  }
+  
+  .cta h2 {
+    color:#2973c8 ;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta p {
+    color: #1d2734 ;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .boton-on{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .submit-on{
+    padding: 10px;
+    background-color: #2b6bb5;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+  }
+  
+  .submit-on p{
+    font-size: 18px;
+    color: white;
+  }
+  
+  .submit-on:hover {
+    background-color: #255b98;
+    color: #9e9797;
+  }
+  
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .step-list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .step {
+      flex: 1;
+    }
+  
+    .benefit-cards {
+      flex-wrap: nowrap;
+    }
+  }
+
+
 @media screen and (max-width: 1180px){
     .wrapper .carrete{
         grid-auto-columns: 70%;
     }
+    .head-online {
+        background-position: center -130px;
+        background-attachment: fixed;
+    }
+
 }
 
 @media screen and (max-width: 1280px){
@@ -702,6 +956,7 @@ footer{
     overflow: hidden;
     padding: 60px 0 30px 0;
 }
+
 
 .contenedor-footer{
     display: flex;
