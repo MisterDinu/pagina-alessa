@@ -832,6 +832,19 @@ header .textos-header{
     line-height: 1.6;
   }
 
+
+/* DOCTORALIA */
+
+.doctoralia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
   /* Responsive */
 
   @media (max-width: 768px) {
