@@ -133,7 +133,7 @@ width: 100%;
   text-align: center;
 }
 
-.psicos.joel {
+.psicos.sarai {
   background: -webkit-linear-gradient(to right,rgba(51, 95, 146, 0.672),
   rgba(35, 101, 158, 0.414));
   background: linear-gradient(to right,rgba(26, 78, 138, 0.863),
@@ -833,13 +833,6 @@ button {
 
 .last-psi{
   text-align: none;
-}
-
-
-/* DOCTORALIA */
-
-.doctoralia {
-  align-items: center;
 }
 
 /* FOOTER */
