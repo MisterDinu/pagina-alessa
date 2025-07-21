@@ -147,6 +147,13 @@ width: 100%;
   rgba(49, 138, 216, 0.548))
 }
 
+.psicos.victor {
+  background: -webkit-linear-gradient(to right, rgba(28, 87, 153, 0.479),
+  rgba(49, 138, 216, 0.548));
+  background: linear-gradient(to right,rgba(28, 87, 153, 0.479),
+  rgba(49, 138, 216, 0.548))
+}
+
 /* NAVS DE LAS OTRAS PÁGINAS */
 
   /* NS */
