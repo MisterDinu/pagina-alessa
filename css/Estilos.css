@@ -840,14 +840,18 @@ header .textos-header{
 
 /* DOCTORALIA */
 
+/* .doctoralia {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+
 .doctoralia {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2rem; /* separa los elementos horizontalmente */
 }
-
-
-
 
 
   /* Responsive */
@@ -1152,6 +1156,10 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
+
+    .doctoralia {
+        flex-direction: column;
+    }
 
     .pf {
         background-position: center -130px;
