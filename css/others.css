@@ -895,7 +895,7 @@ footer{
 
 
 
-/* AJUSTES DE SCREEN */
+/* RESPONSIVE */
 
 @media screen and (max-width: 1230px) {
 
@@ -934,6 +934,12 @@ footer{
 }
 
 @media screen and (max-width: 912px) {
+
+.whats-doct{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .proceso{
   padding-bottom: 160px;
